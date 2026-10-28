@@ -22,7 +22,6 @@ export default defineConfig({
 			description:
 				'Fundamental terms for building with LLMs and agents, compared across Anthropic, OpenAI, and Google.',
 			social: [{ icon: 'github', label: 'GitHub', href: repo }],
-			editLink: { baseUrl: `${repo}/edit/main/` },
 			components: { PageTitle: './src/components/PageTitle.astro' },
 			sidebar: [
 				{
