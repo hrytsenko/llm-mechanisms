@@ -1,0 +1,40 @@
+---
+title: "Agent Fundamentals"
+description: "Common agent-building mechanisms — the building blocks you use to create autonomous agents."
+---
+
+import TermList from '../../../components/TermList.astro';
+
+## Purpose
+
+This guide covers common agent-building mechanisms — the building blocks you use to create autonomous agents. It's based on the SDKs provided by three of the largest platforms: [Anthropic's Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview), [OpenAI's Agents SDK](https://openai.github.io/openai-agents-python/), and [Google's Agent Development Kit](https://adk.dev/).
+
+A mechanism is in scope when it meets two checks: importance — it is widely recognized across the industry, independent of any one provider — and adoption — platforms offer it as a first-class feature, or at least document how to build it.
+
+## Overview
+
+All mechanisms fall into one of two categories: foundational and situational. Foundational mechanisms are the ones to think about from day one — mostly inevitable for any production-grade agent. Situational mechanisms are ones to be aware of from day one but typically applied on day two, once the agent is in production and ready to be enhanced. They are no less important — you simply reach for them after the foundation runs.
+
+## Core
+
+<TermList directory="agents/core" />
+
+## Capability
+
+<TermList directory="agents/capability" />
+
+## State
+
+<TermList directory="agents/state" />
+
+## Control
+
+<TermList directory="agents/control" />
+
+## Runtime
+
+<TermList directory="agents/runtime" />
+
+## Insight
+
+<TermList directory="agents/insight" />

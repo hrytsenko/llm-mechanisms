@@ -1,0 +1,23 @@
+---
+title: AI Glossary
+template: splash
+hero:
+  tagline: Fundamental terms for building with LLMs and agents, compared across Anthropic, OpenAI, and Google.
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+export const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+<CardGrid>
+	<LinkCard
+		title="LLM Fundamentals"
+		description="The building blocks you use to call a model directly: prompting, generation, grounding, extension, and execution."
+		href={`${base}/llm/`}
+	/>
+	<LinkCard
+		title="Agent Fundamentals"
+		description="The building blocks you use to create autonomous agents: core, capability, state, control, runtime, and insight."
+		href={`${base}/agents/`}
+	/>
+</CardGrid>

@@ -1,0 +1,60 @@
+---
+title: "LLM Fundamentals"
+description: "Common LLM API concepts — the building blocks you use to call a model directly over its HTTP API."
+---
+
+import TermList from '../../../components/TermList.astro';
+
+## Purpose
+
+This guide covers common LLM API concepts — the building blocks you use to call a model directly over its HTTP API. It's based on the APIs provided by three of the largest platforms: [Anthropic's Messages API](https://platform.claude.com/docs/en/intro), [OpenAI's Responses API](https://developers.openai.com/api/reference/overview), and [Google's Interactions API](https://ai.google.dev/gemini-api/docs).
+
+The scope is deliberately the **core mechanisms** — how you shape a request, control generation, supply content, add tools, and execute requests. Higher-level frameworks built *on top of* these primitives, such as agent runtimes and managed sessions, are out of scope.
+
+A mechanism is in scope when it meets two checks: **importance** — it is widely recognized across the industry, independent of any one provider — and **adoption** — platforms offer it as a first-class feature, or at least document how to build it.
+
+## Tendencies
+
+Across these mechanisms, each vendor leans a consistent way: **Anthropic toward the model, OpenAI toward developer choice, Google toward multimodal and scale.** These are tendencies, not rules — each platform borrows from the others where it makes sense — but the pattern is stable enough to be worth naming.
+
+**Anthropic** pushes control into the model rather than the API. Sampling knobs are minimal — and rejected outright on its newest models, which steer via prompting and an effort lever instead. Refusals are trained-in (constitutional) rather than configured, and safety exposes no developer-facing threshold settings. The bet is that a well-trained model plus prompting beats fine-grained parameters.
+
+**OpenAI** exposes the most surface area and lets you choose the path. It offers both server-managed and client-managed conversation state, the widest set of sampling controls, a standalone moderation classifier you enforce yourself, an offline tokenizer alongside the counting endpoint, and MCP connectors with per-call approval. Where others pick one default, OpenAI usually offers both and hands you the decision.
+
+**Google** builds around multimodal content, treating images, PDFs, and other media as first-class input with per-modality token accounting and resolution controls. It also tends toward the highest ceilings for content — larger context, higher page and image counts — which makes it attractive at scale.
+
+## Overview
+
+All mechanisms fall into one of two categories: foundational and situational. **Foundational** mechanisms are the ones to think about from day one — essentially unavoidable for any production-grade application. There are five: context window, conversation state, system instructions, structured outputs, and error handling. Any application that calls a model assembles a context window, carries conversation state, writes a system instruction, and handles truncation and refusals; most also constrain the output to a schema. **Situational** mechanisms are ones to be aware of from day one but typically applied later, once the application is being enhanced — or from the start, when the application depends on them. They are no less important; you simply reach for them once the foundation is in place.
+
+The sections that follow group the mechanisms into a natural progression: start with what you **must** (prompting and generation), continue with what you **can** (grounding and extension), and close with how you **run** (execution).
+
+## Prompting
+
+Assembling model inputs and controlling their handling.
+
+<TermList directory="llm/prompting" />
+
+## Generation
+
+Steering model behavior and tuning its output.
+
+<TermList directory="llm/generation" />
+
+## Grounding
+
+Supplying specific content and accessing broad knowledge.
+
+<TermList directory="llm/grounding" />
+
+## Extension
+
+Adding specific and generic model capabilities.
+
+<TermList directory="llm/extension" />
+
+## Execution
+
+Setting a runtime baseline and choosing execution modes.
+
+<TermList directory="llm/execution" />

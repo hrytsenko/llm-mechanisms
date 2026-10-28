@@ -1,0 +1,17 @@
+---
+// Adds the term's tier badge under the default page title.
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { Badge } from '@astrojs/starlight/components';
+import { tierBadges } from '../tiers';
+
+const { tier } = Astro.locals.starlightRoute.entry.data;
+---
+
+<Default />
+{tier && <Badge {...tierBadges[tier]} size="medium" class="tier" />}
+
+<style>
+	.tier {
+		margin-top: 0.5rem;
+	}
+</style>
