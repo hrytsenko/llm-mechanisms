@@ -1,8 +1,8 @@
-# AI Glossary
+# LLM Mechanisms
 
 Fundamental mechanisms for building with LLMs and agents, compared across Anthropic, OpenAI, and Google.
 
-Published at [Hrytsenko - AI Glossary](https://hrytsenko.github.io/ai-glossary/).
+Published at [Hrytsenko - LLM Mechanisms](https://hrytsenko.github.io/llm-mechanisms/).
 
 ## Content
 
@@ -53,7 +53,7 @@ Note that `description` repeats the definition; it appears in the guide's mechan
 
 ```sh
 npm install
-npm run dev      # http://localhost:4321/ai-glossary/
+npm run dev      # http://localhost:4321/llm-mechanisms/
 npm run build    # output in dist/
 ```
 

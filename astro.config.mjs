@@ -2,7 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-const repo = 'https://github.com/hrytsenko/ai-glossary';
+const repo = 'https://github.com/hrytsenko/llm-mechanisms';
 
 /**
  * A sidebar group listing the terms in one directory.
@@ -15,10 +15,10 @@ const group = (label, directory) => ({ label, items: [{ autogenerate: { director
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://hrytsenko.github.io',
-	base: '/ai-glossary',
+	base: '/llm-mechanisms',
 	integrations: [
 		starlight({
-			title: 'AI Glossary',
+			title: 'LLM Mechanisms',
 			description:
 				'Fundamental mechanisms for building with LLMs and agents, compared across Anthropic, OpenAI, and Google.',
 			social: [{ icon: 'github', label: 'GitHub', href: repo }],

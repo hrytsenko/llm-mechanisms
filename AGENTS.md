@@ -4,7 +4,7 @@ See [README.md](README.md) for the content layout, the page template, and how to
 
 ## Decisions
 
-### The glossary describes mechanisms
+### Pages describe mechanisms
 
 Each page describes one mechanism — something you use to build with LLMs or agents, such as prompt caching or subagents. Call them "mechanisms" in all prose: the tagline, the landing page, guide overviews, mechanism pages, and the README. Don't call them "terms" or "concepts".
 
