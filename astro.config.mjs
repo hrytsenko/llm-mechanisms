@@ -20,9 +20,10 @@ export default defineConfig({
 		starlight({
 			title: 'AI Glossary',
 			description:
-				'Fundamental terms for building with LLMs and agents, compared across Anthropic, OpenAI, and Google.',
+				'Fundamental mechanisms for building with LLMs and agents, compared across Anthropic, OpenAI, and Google.',
 			social: [{ icon: 'github', label: 'GitHub', href: repo }],
 			components: { PageTitle: './src/components/PageTitle.astro' },
+			customCss: ['./src/styles/custom.css'],
 			sidebar: [
 				{
 					label: 'LLM Fundamentals',

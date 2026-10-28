@@ -1,0 +1,11 @@
+/* The splash hero has no image: give its text the full width and drop the large gap below it. */
+@media (min-width: 50rem) {
+	.hero {
+		grid-template-columns: 100%;
+		padding-bottom: 1rem;
+	}
+}
+
+.hero .copy > * {
+	max-width: none;
+}

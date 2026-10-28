@@ -1,6 +1,6 @@
 # AI Glossary
 
-Fundamental terms for building with LLMs and agents, compared across Anthropic, OpenAI, and Google.
+Fundamental mechanisms for building with LLMs and agents, compared across Anthropic, OpenAI, and Google.
 
 Published at [Hrytsenko - AI Glossary](https://hrytsenko.github.io/ai-glossary/).
 
@@ -10,20 +10,20 @@ Published at [Hrytsenko - AI Glossary](https://hrytsenko.github.io/ai-glossary/)
 src/content/docs/
   index.mdx                  # landing page
   llm/                       # LLM Fundamentals
-    index.mdx                # overview: purpose, tendencies, terms by group
-    <group>/<term>.md
+    index.mdx                # mechanisms by group
+    <group>/<mechanism>.md   # mechanism explanation
     ...
   agents/                    # Agent Fundamentals
-    index.mdx                # overview: purpose, terms by group
-    <group>/<term>.md
+    index.mdx                # mechanisms by group
+    <group>/<mechanism>.md   # mechanism explanation
     ...
 ```
 
-Each term is one Markdown file in its group directory:
+Each mechanism is one Markdown file in its group directory:
 
 ```md
 ---
-title: "Term"
+title: "Mechanism"
 description: "One-sentence definition."
 tier: foundational        # foundational or situational
 sidebar:
@@ -32,7 +32,7 @@ sidebar:
 
 One-sentence definition.
 
-Details, in one or more paragraphs.
+Additional notes, in a couple of paragraphs.
 
 ## Considerations
 
@@ -47,7 +47,7 @@ Details, in one or more paragraphs.
 - [Page title | Vendor](https://...)
 ```
 
-Note that `description` repeats the term's definition; it appears in the guide's term list and in link previews.
+Note that `description` repeats the definition; it appears in the guide's mechanism list and in link previews.
 
 ## Develop
 

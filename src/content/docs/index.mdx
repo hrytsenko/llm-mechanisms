@@ -2,22 +2,33 @@
 title: AI Glossary
 template: splash
 hero:
-  tagline: Fundamental terms for building with LLMs and agents, compared across Anthropic, OpenAI, and Google.
+  tagline: Fundamental mechanisms for building with LLMs and agents, compared across Anthropic, OpenAI, and Google.
 ---
 
-import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { Badge, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { tierBadges } from '../../tiers';
 
 export const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+Each mechanism in the glossary meets two checks:
+
+- **Importance** — it is widely recognized across the industry, not tied to one vendor.
+- **Adoption** — vendors offer it as a first-class feature, or at least document how to build it.
+
+Each mechanism is tagged with one of two tiers:
+
+- <Badge {...tierBadges.foundational} /> — to consider from day one. They are needed in almost every production application.
+- <Badge {...tierBadges.situational} /> — to be aware of from day one. They are no less important, just needed later or in specific cases.
 
 <CardGrid>
 	<LinkCard
 		title="LLM Fundamentals"
-		description="The building blocks you use to call a model directly: prompting, generation, grounding, extension, and execution."
+		description="Mechanisms you use to call a model directly: prompting, generation, grounding, extension, and execution."
 		href={`${base}/llm/`}
 	/>
 	<LinkCard
 		title="Agent Fundamentals"
-		description="The building blocks you use to create autonomous agents: core, capability, state, control, runtime, and insight."
+		description="Mechanisms you use to create autonomous agents: core, capability, state, control, runtime, and insight."
 		href={`${base}/agents/`}
 	/>
 </CardGrid>

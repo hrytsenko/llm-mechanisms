@@ -5,36 +5,42 @@ description: "Common agent-building mechanisms — the building blocks you use t
 
 import TermList from '../../../components/TermList.astro';
 
-## Purpose
+export const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-This guide covers common agent-building mechanisms — the building blocks you use to create autonomous agents. It's based on the SDKs provided by three of the largest platforms: [Anthropic's Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview), [OpenAI's Agents SDK](https://openai.github.io/openai-agents-python/), and [Google's Agent Development Kit](https://adk.dev/).
-
-A mechanism is in scope when it meets two checks: importance — it is widely recognized across the industry, independent of any one provider — and adoption — platforms offer it as a first-class feature, or at least document how to build it.
-
-## Overview
-
-All mechanisms fall into one of two categories: foundational and situational. Foundational mechanisms are the ones to think about from day one — mostly inevitable for any production-grade agent. Situational mechanisms are ones to be aware of from day one but typically applied on day two, once the agent is in production and ready to be enhanced. They are no less important — you simply reach for them after the foundation runs.
+This guide covers the mechanisms you use to create autonomous agents on top of the model APIs described in <a href={`${base}/llm/`}>LLM Fundamentals</a>. See the <a href={`${base}/`}>landing page</a> for the scope and tiers.
 
 ## Core
+
+Wrapping the model into an agent and driving its loop.
 
 <TermList directory="agents/core" />
 
 ## Capability
 
+Giving the agent actions and delegating focused subtasks.
+
 <TermList directory="agents/capability" />
 
 ## State
+
+Recording a session and carrying knowledge across sessions.
 
 <TermList directory="agents/state" />
 
 ## Control
 
+Intercepting the agent's actions and validating its content.
+
 <TermList directory="agents/control" />
 
 ## Runtime
 
+Hosting the agent process and isolating what it executes.
+
 <TermList directory="agents/runtime" />
 
 ## Insight
+
+Observing the agent's runs and evaluating their quality.
 
 <TermList directory="agents/insight" />
