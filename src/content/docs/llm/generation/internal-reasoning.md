@@ -8,15 +8,12 @@ sidebar:
 
 Internal reasoning lets the model spend tokens on an internal chain of thought before producing its visible answer.
 
-Internal reasoning trades tokens for higher quality on hard, multi-step tasks. Under the hood, the model breaks the problem down, considers alternatives, and self-checks; this internal trace is generated, billed, and counted separately from the final output.
-
-Platforms run a dedicated reasoning phase, separate from the response. They typically return only a summary of it while billing the full trace, so the billed token count won't match what you see.
-
-Platforms are converging on an effort lever to steer reasoning depth and token consumption, replacing the earlier numeric token budgets.
+Internal reasoning trades tokens for higher quality on hard, multi-step tasks. Under the hood, the model reasons in a dedicated phase before the response: it breaks the problem down, considers alternatives, and self-checks. Platforms typically return only a summary of the reasoning but bill for all of it, so the billed token count won't match what you see.
 
 ## Considerations
 
 - Reasoning tokens count toward the context window.
+- Use effort levers to steer reasoning depth and token consumption.
 - Return reasoning blocks during a tool call to preserve the model's chain of thought.
 
 ## Specifics

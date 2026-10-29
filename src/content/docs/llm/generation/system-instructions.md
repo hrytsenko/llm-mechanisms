@@ -8,15 +8,12 @@ sidebar:
 
 System instructions are a high-authority channel for steering the model's reasoning.
 
-LLM APIs expose system instructions as a separate top-level parameter. This parameter carries the highest authority and, because it sits at the front of the prompt and rarely changes, is a primary target for prompt caching.
-
-Some platforms also allow system instructions inside the message array via a dedicated role. These mid-conversation instructions let you steer the model further while keeping the prefix cacheable.
-
-Highest authority means the model prefers system instructions over user and assistant messages when they conflict; among system instructions, later ones override earlier ones.
+LLM APIs expose system instructions as a separate top-level parameter. The model favors them over conflicting user messages, and because they sit at the front of the prompt and rarely change, they're a primary target for prompt caching.
 
 ## Considerations
 
 - Focus instructions on the model's role and goal first, then on rules and constraints.
+- Use mid-conversation system instructions to steer the model while keeping the prefix cacheable.
 - Don't put any untrusted or external content into system instructions.
 
 ## References
