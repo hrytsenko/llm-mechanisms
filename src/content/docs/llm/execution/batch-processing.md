@@ -8,20 +8,19 @@ sidebar:
 
 Batch processing runs a large set of requests asynchronously.
 
-Batch processing trades real-time processing for a discount on input and output token costs (typically around 50%).
-
-Platforms let you submit batches via a request-based or file-based API. They limit batch size and per-batch request count, and impose account-wide cross-batch limits. They also define a guaranteed maximum period to process a batch (typically around 24h).
+Batch processing trades real-time responses for a discount on input and output token costs (around 50%). The platform processes each batch within a completion window (around 24h), often much sooner, and expires requests it can't finish in time.
 
 ## Considerations
 
-- Poll for status — batches often complete well before the guaranteed window.
-- Reconcile results and handle partial failures of individual requests.
-- The batch discount stacks with prompt caching for compounding savings.
+- Split large jobs across batches to stay within size and request-count limits.
+- Handle failed and expired requests individually; the rest of the batch still completes.
+- The batch discount stacks with prompt caching.
 
 ## Specifics
 
-- Anthropic submits requests inline through the API, with no file upload.
-- OpenAI and Google are file-based, exchanging JSONL files for input and results.
+- Anthropic takes requests inline, with no file upload.
+- OpenAI takes requests as an uploaded JSONL file.
+- Google takes either: inline for small batches, a JSONL file for large ones.
 
 ## References
 
