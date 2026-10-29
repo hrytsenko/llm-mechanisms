@@ -18,7 +18,7 @@ Platforms provide a dedicated operation to count tokens. It accepts the same req
 ## Specifics
 
 - OpenAI additionally ships a standalone tokenizer (`tiktoken`) for text estimates only.
-- Gemini reports a per-modality breakdown (text, image, and so on) in the count response.
+- Google reports a per-modality breakdown (text, image, and so on) in the count response.
 
 ## References
 

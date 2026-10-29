@@ -18,6 +18,8 @@ Code identifiers such as `TermList` predate this decision and keep their names.
 
 A mechanism page opens with a one-sentence definition, followed by one paragraph of additional detail. If the detail doesn't fit, keep what explains how the mechanism works, move practical advice to Considerations, and move vendor differences to Specifics.
 
+Considerations and Specifics each keep at most three points, the most important ones.
+
 ### Statements don't hedge on platform support
 
 Not every platform offers every mechanism, or every aspect of one. Don't qualify statements with "where supported", "on some platforms", or similar. Describing an aspect means it is worth knowing; readers check the vendor documentation for availability. When a divergence between platforms matters, point it out in Specifics.

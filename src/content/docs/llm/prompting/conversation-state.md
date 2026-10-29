@@ -18,10 +18,10 @@ Models are stateless by nature, so they expect the full conversation state on ea
 ## Specifics
 
 - Anthropic manages state client-side only (you always resend the full history).
-- OpenAI and Gemini default to server-side state, with a client-side fallback.
+- OpenAI and Google default to server-side state, with a client-side fallback.
 
 ## References
 
 - [Messages API | Anthropic](https://platform.claude.com/docs/en/build-with-claude/working-with-messages)
 - [Conversation state | OpenAI](https://developers.openai.com/api/docs/guides/conversation-state)
-- [Interactions API | Google](https://ai.google.dev/gemini-api/docs/migrate-to-interactions#multi-turn-conversations)
+- [Interactions API | Google](https://ai.google.dev/gemini-api/docs/interactions-overview)
