@@ -18,12 +18,12 @@ For small, one-off files, platforms support inline delivery (`base64`); for larg
 
 ## Specifics
 
-- Anthropic retains files until you delete them.
-- OpenAI requires a `purpose` on each file that governs how it may be used.
+- Anthropic retains files until you delete them or they reach an expiration set on upload.
+- OpenAI requires each uploaded file to declare its intended use, which governs how it may be used.
 - Google auto-deletes uploaded files after 48 hours.
 
 ## References
 
-- [Files API | Anthropic](https://platform.claude.com/docs/en/build-with-claude/files)
-- [File inputs | OpenAI](https://developers.openai.com/api/docs/guides/file-inputs)
-- [Files API | Google](https://ai.google.dev/gemini-api/docs/files)
+- [File input | Anthropic](https://platform.claude.com/docs/en/build-with-claude/files)
+- [File input | OpenAI](https://developers.openai.com/api/docs/guides/file-inputs)
+- [File input | Google](https://ai.google.dev/gemini-api/docs/file-input-methods)

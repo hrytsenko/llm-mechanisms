@@ -19,11 +19,11 @@ Internal reasoning trades tokens for higher quality on hard, multi-step tasks. U
 ## Specifics
 
 - Anthropic signs each reasoning block and keeps reasoning from all prior turns in context, billed as input.
-- OpenAI discards reasoning between turns by default, or returns encrypted reasoning you can pass back when running stateless.
-- Google uses thought signatures — encrypted representations of the reasoning state that you must return in later turns.
+- OpenAI lets you choose whether reasoning from earlier turns stays in context.
+- Google carries reasoning across turns as encrypted thought signatures, which the server keeps for you.
 
 ## References
 
-- [Thinking | Anthropic](https://platform.claude.com/docs/en/build-with-claude/thinking)
-- [Reasoning models | OpenAI](https://developers.openai.com/api/docs/guides/reasoning)
-- [Gemini thinking | Google](https://ai.google.dev/gemini-api/docs/thinking)
+- [Internal reasoning | Anthropic](https://platform.claude.com/docs/en/build-with-claude/thinking)
+- [Internal reasoning | OpenAI](https://developers.openai.com/api/docs/guides/reasoning)
+- [Internal reasoning | Google](https://ai.google.dev/gemini-api/docs/thinking)

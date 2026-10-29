@@ -24,5 +24,5 @@ As a server-side tool, it runs in the platform's sandbox, isolated from your own
 ## References
 
 - [Code execution | Anthropic](https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool)
-- [Code interpreter | OpenAI](https://developers.openai.com/api/docs/guides/tools-code-interpreter)
+- [Code execution | OpenAI](https://developers.openai.com/api/docs/guides/tools-code-interpreter)
 - [Code execution | Google](https://ai.google.dev/gemini-api/docs/code-execution)

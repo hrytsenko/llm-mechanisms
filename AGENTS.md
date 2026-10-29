@@ -12,13 +12,15 @@ The landing page ([src/content/docs/index.mdx](src/content/docs/index.mdx)) stay
 
 Each page describes one mechanism — something you use to build with LLMs or agents, such as prompt caching or subagents. Call them "mechanisms" in all prose: the tagline, the landing page, guide overviews, mechanism pages, and the README. Don't call them "terms" or "concepts".
 
-Code identifiers such as `TermList` predate this decision and keep their names.
-
 ### Mechanism pages stay concise
 
 A mechanism page opens with a one-sentence definition, followed by one paragraph of additional detail. If the detail doesn't fit, keep what explains how the mechanism works, move practical advice to Considerations, and move vendor differences to Specifics.
 
 Considerations and Specifics each keep at most three points, the most important ones.
+
+### Prose avoids API identifiers
+
+Describe what a platform does in plain prose, without exact field, parameter, or operation names, such as a file's `purpose` or `previous_response_id`. Readers find the identifiers in the vendor documentation. Names of products, libraries, and files, such as `tiktoken` or `CLAUDE.md`, are fine.
 
 ### Statements don't hedge on platform support
 
@@ -29,6 +31,8 @@ Not every platform offers every mechanism, or every aspect of one. Don't qualify
 Give one link per platform, in the order Anthropic, OpenAI, Google. Skip a platform only if it doesn't document the mechanism. Prefer the page dedicated to the mechanism; fall back to a broader guide or an API reference only when no such page exists.
 
 Add another link for a platform only when it covers an aspect the page describes. For example, the system instructions page also links Anthropic's mid-conversation system messages, because the page recommends them.
+
+Label each link "Label | Vendor" with a couple of words rather than the page's exact title, so readers can scan and compare the references. For the main link to a page dedicated to the mechanism, use the mechanism's title, so the labels line up across platforms. For a broader page, shorten its own title, such as "Messages API". For an additional link, name the aspect it covers, such as "Tool search".
 
 ### The LLM guide covers the latest API per platform
 

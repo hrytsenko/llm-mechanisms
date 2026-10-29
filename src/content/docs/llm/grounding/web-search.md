@@ -26,5 +26,5 @@ Platforms provide a server-side web search tool that returns results with source
 - [Web search | Anthropic](https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool)
 - [Web fetch | Anthropic](https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-fetch-tool)
 - [Web search | OpenAI](https://developers.openai.com/api/docs/guides/tools-web-search)
-- [Google search | Google](https://ai.google.dev/gemini-api/docs/google-search)
+- [Web search | Google](https://ai.google.dev/gemini-api/docs/google-search)
 - [URL context | Google](https://ai.google.dev/gemini-api/docs/url-context)

@@ -23,8 +23,8 @@ The developer declares the available tools in the prompt. From there the model d
 
 ## References
 
-- [Define tools | Anthropic](https://platform.claude.com/docs/en/agents-and-tools/tool-use/define-tools)
+- [Custom tools | Anthropic](https://platform.claude.com/docs/en/agents-and-tools/tool-use/define-tools)
 - [Tool search | Anthropic](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool)
-- [Function calling | OpenAI](https://developers.openai.com/api/docs/guides/function-calling)
+- [Custom tools | OpenAI](https://developers.openai.com/api/docs/guides/function-calling)
 - [Tool search | OpenAI](https://developers.openai.com/api/docs/guides/tools-tool-search)
-- [Function calling | Google](https://ai.google.dev/gemini-api/docs/function-calling)
+- [Custom tools | Google](https://ai.google.dev/gemini-api/docs/function-calling)

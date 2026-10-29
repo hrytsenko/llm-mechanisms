@@ -19,11 +19,10 @@ Under the hood, models use native vision on images (common formats include JPEG,
 ## Specifics
 
 - Anthropic gives no explicit quality-vs-cost lever; images and PDF pages are resized automatically.
-- Google also surfaces object detection and segmentation masks on images.
 
 ## References
 
-- [Vision | Anthropic](https://platform.claude.com/docs/en/build-with-claude/vision)
+- [Vision input | Anthropic](https://platform.claude.com/docs/en/build-with-claude/vision)
 - [PDF support | Anthropic](https://platform.claude.com/docs/en/build-with-claude/pdf-support)
-- [Images | OpenAI](https://developers.openai.com/api/docs/guides/images-vision)
-- [Images | Google](https://ai.google.dev/gemini-api/docs/image-understanding)
+- [Vision input | OpenAI](https://developers.openai.com/api/docs/guides/images-vision)
+- [Vision input | Google](https://ai.google.dev/gemini-api/docs/image-understanding)

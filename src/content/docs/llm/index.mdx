@@ -11,13 +11,13 @@ This guide covers the mechanisms you use to call a model directly over its HTTP 
 
 ## Tendencies
 
-Across these mechanisms, each vendor leans a consistent way: **Anthropic toward the model, OpenAI toward developer choice, Google toward multimodal and scale.** These are tendencies, not rules — each vendor borrows from the others where it makes sense — but the pattern is stable enough to be worth naming.
+Across these mechanisms, each vendor leans a consistent way: **Anthropic toward explicit control, OpenAI toward options, Google toward multimodal input.** These are tendencies, not rules.
 
-**Anthropic** pushes control into the model rather than the API. It offers no sampling knobs — models steer via prompting and an effort lever instead. Refusals are trained-in (constitutional) rather than configured, and safety exposes no developer-facing threshold settings. The bet is that a well-trained model plus prompting beats fine-grained parameters.
+**Anthropic** leaves control to the application: it resends the conversation, marks what to cache, and brings its own retrieval. Safety is the exception: safety classifiers are built in, refuse through a dedicated stop reason, and have no thresholds to tune.
 
-**OpenAI** exposes the most surface area and lets you choose the path. It offers both server-managed and client-managed conversation state, a standalone moderation classifier you enforce yourself, an offline tokenizer alongside the counting endpoint, and MCP connectors with per-call approval. Where others pick one default, OpenAI usually offers both and hands you the decision.
+**OpenAI** offers the most options and leaves the choice to you: implicit or explicit-only caching, schema or grammar-constrained tool inputs, a standalone moderation service, and an offline tokenizer next to the counting endpoint.
 
-**Google** builds around multimodal content, treating images, PDFs, and other media as first-class input with per-modality token accounting and resolution controls. It also tends toward the highest ceilings for content — larger context, higher page and image counts — which makes it attractive at scale.
+**Google** builds around multimodal input, with per-modality token counts and the most images per request. Elsewhere it leaves less to configure: caching is implicit only, and uploaded files expire after 48 hours.
 
 ## Prompting
 

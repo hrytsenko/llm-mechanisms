@@ -21,5 +21,5 @@ LLM APIs expose system instructions as a separate top-level parameter. The model
 - [Messages API | Anthropic](https://platform.claude.com/docs/en/build-with-claude/working-with-messages)
 - [System messages | Anthropic](https://platform.claude.com/docs/en/build-with-claude/mid-conversation-system-messages)
 - [Prompt engineering | OpenAI](https://developers.openai.com/api/docs/guides/prompt-engineering)
-- [Chain of command | OpenAI](https://model-spec.openai.com/2025-12-18.html#chain_of_command)
+- [Chain of command | OpenAI](https://model-spec.openai.com/2026-08-18.html#chain_of_command)
 - [Text generation | Google](https://ai.google.dev/gemini-api/docs/text-generation)

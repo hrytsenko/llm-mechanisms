@@ -40,7 +40,7 @@ Additional notes, in one paragraph.
 
 ## References
 
-- [Page title | Vendor](https://...)
+- [Mechanism | Vendor](https://...)
 ```
 
 Note that `description` repeats the definition; it appears in the guide's mechanism list and in link previews.

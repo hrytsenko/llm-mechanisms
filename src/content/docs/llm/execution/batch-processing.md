@@ -20,10 +20,8 @@ Batch processing trades real-time responses for a discount on input and output t
 
 - Anthropic takes requests inline, with no file upload.
 - OpenAI takes requests as an uploaded JSONL file.
-- Google takes either: inline for small batches, a JSONL file for large ones.
 
 ## References
 
 - [Batch processing | Anthropic](https://platform.claude.com/docs/en/build-with-claude/batch-processing)
-- [Batch API | OpenAI](https://developers.openai.com/api/docs/guides/batch)
-- [Batch API | Google](https://ai.google.dev/gemini-api/docs/batch-api)
+- [Batch processing | OpenAI](https://developers.openai.com/api/docs/guides/batch)

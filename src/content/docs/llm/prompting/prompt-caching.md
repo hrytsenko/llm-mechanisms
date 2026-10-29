@@ -25,4 +25,4 @@ The cached prefix is the stable head of the prompt — system instructions, tool
 
 - [Prompt caching | Anthropic](https://platform.claude.com/docs/en/build-with-claude/prompt-caching)
 - [Prompt caching | OpenAI](https://developers.openai.com/api/docs/guides/prompt-caching)
-- [Context caching | Google](https://ai.google.dev/gemini-api/docs/caching)
+- [Prompt caching | Google](https://ai.google.dev/gemini-api/docs/caching)

@@ -19,7 +19,7 @@ Under the hood, file search requires machinery for document chunking, embedding,
 
 - Anthropic offers no hosted store; you supply retrieval and pass results back.
 - OpenAI returns file citations by default, but not the retrieved chunk text unless you request it.
-- Google limits combining search tools with non-search tools in one request.
+- Google can't combine file search with other grounding tools, such as Google Search or URL context, in one request.
 
 ## References
 
