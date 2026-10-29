@@ -9,6 +9,16 @@ export const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 This guide covers the mechanisms you use to create autonomous agents on top of the model APIs described in <a href={`${base}/llm/`}>LLM Fundamentals</a>. See the <a href={`${base}/`}>landing page</a> for the scope and tiers.
 
+## Tendencies
+
+Across these mechanisms, each vendor leans a consistent way: **Anthropic toward a complete harness, OpenAI toward composable primitives, Google toward prescribed structure.** These are tendencies, not rules.
+
+**Anthropic** ships a ready harness that runs outside your process and is configured rather than built: built-in tools and subagents, automatic compaction, and hooks that allow, deny, or ask. It works from the filesystem, loading context, skills, and memory from directories and writing sessions to disk.
+
+**OpenAI** runs the loop inside your process and gives each concern its own primitive to compose in code: guardrails, approvals, handoffs, and pluggable session stores. Runs serialize and resume, and the same agent definition carries from a local run to a sandbox to a hosted backend.
+
+**Google** prescribes the structure: the session is an event stream that state and context derive from, and multi-agent composition is explicit through sequential, parallel, and loop agents. Around it sits a broad ecosystem: built-in evaluation, a catalog of pre-built integrations, and managed runtimes.
+
 ## Core
 
 Wrapping the model into an agent and driving its loop.
