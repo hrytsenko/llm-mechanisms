@@ -8,9 +8,7 @@ sidebar:
 
 Code execution lets the model perform deterministic computations.
 
-As a server-side tool, it runs in the platform's sandbox, isolated from your own systems. How the sandbox is managed varies, from an explicitly created, session-oriented sandbox to completely ephemeral execution. Session-oriented sandboxes are torn down, typically after a short idle interval.
-
-Under the hood, the model writes and runs code, iterating on errors until it succeeds.
+As a server-side tool, it runs in the platform's sandbox, isolated from your own systems. Under the hood, the model writes and runs code, iterating on errors until it succeeds. A sandbox can be reused across requests to keep its files and state, within a limited lifetime.
 
 ## Considerations
 
@@ -19,8 +17,8 @@ Under the hood, the model writes and runs code, iterating on errors until it suc
 
 ## Specifics
 
-- Anthropic bills the container by uptime (per-hour), separate from tokens.
-- OpenAI bills the container per active minute, on top of tokens.
+- Anthropic bills execution time per container-hour, on top of tokens.
+- OpenAI bills each container session by memory size, on top of tokens.
 - Google folds execution into token cost, with no separate sandbox charge.
 
 ## References

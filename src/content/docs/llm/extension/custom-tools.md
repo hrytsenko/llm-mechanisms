@@ -8,20 +8,18 @@ sidebar:
 
 Custom tools let the model ask the application to execute actions.
 
-The developer declares the available tools in the prompt. From there the model decides when to call one and emits a request with arguments; the application runs the operation and returns the result; and the model folds that result into its answer.
-
-Tool definitions live in the cached prefix, so where a platform lets you restrict the callable set without editing the tools array, prefer that — it steers the model without invalidating the cache. Tool outputs are strings in a format you choose; signal errors explicitly so the model can react, and keep outputs lean, since results stay in context and count against the window on every later turn.
+The developer declares the available tools in the prompt. From there the model decides when to call one and emits a request with arguments; the application runs the operation and returns the result or an error; and the model folds that into its answer. Tool definitions sit in the cached prefix, and results stay in context on every later turn.
 
 ## Considerations
 
-- Use calling mode to force, require, or disable tool calls for specific turns.
-- Keep tool definitions specific, precise, and non-overlapping, and the up-front set small.
+- Keep tool definitions specific, precise, and non-overlapping.
+- Use calling mode to control tool calls per turn without editing the tool list.
 - Use tool search to reduce context size and improve selection accuracy.
 
 ## Specifics
 
 - Anthropic offers two search variants: pattern matching (`regex`) and keyword relevance (`BM25`).
-- OpenAI groups tools into namespaces and supports hosted and client-executed search.
+- OpenAI recommends grouping deferred tools into small namespaces.
 - Google has no API-level support for tool search.
 
 ## References
