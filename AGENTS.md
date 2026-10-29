@@ -29,3 +29,7 @@ Not every platform offers every mechanism, or every aspect of one. Don't qualify
 Give one link per platform, in the order Anthropic, OpenAI, Google. Skip a platform only if it doesn't document the mechanism. Prefer the page dedicated to the mechanism; fall back to a broader guide or an API reference only when no such page exists.
 
 Add another link for a platform only when it covers an aspect the page describes. For example, the system instructions page also links Anthropic's mid-conversation system messages, because the page recommends them.
+
+### The LLM guide covers the latest API per platform
+
+The LLM guide relies only on each platform's latest API family: the Anthropic Messages API, the OpenAI Responses API, and the Google Interactions API. Don't describe or link older API families, such as OpenAI's Chat Completions, even where they offer more.

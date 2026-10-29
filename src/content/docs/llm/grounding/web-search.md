@@ -12,7 +12,7 @@ Platforms provide a server-side web search tool that returns results with source
 
 ## Considerations
 
-- Cap searches (or limit search context) to control cost.
+- Limit search usage to control cost.
 - Restrict accessible domains and set user location to scope and localize results.
 
 ## Specifics

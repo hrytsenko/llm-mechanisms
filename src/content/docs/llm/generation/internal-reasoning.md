@@ -8,7 +8,7 @@ sidebar:
 
 Internal reasoning lets the model spend tokens on an internal chain of thought before producing its visible answer.
 
-Internal reasoning trades tokens for higher quality on hard, multi-step tasks. Under the hood, the model reasons in a dedicated phase before the response: it breaks the problem down, considers alternatives, and self-checks. Platforms typically return only a summary of the reasoning but bill for all of it, so the billed token count won't match what you see.
+Internal reasoning trades tokens for higher quality on hard, multi-step tasks. Under the hood, the model reasons in a dedicated phase before the response: it breaks the problem down, considers alternatives, and self-checks. Platforms return at most a summary of the reasoning but bill for all of it, so the billed token count won't match what you see.
 
 ## Considerations
 
@@ -18,13 +18,12 @@ Internal reasoning trades tokens for higher quality on hard, multi-step tasks. U
 
 ## Specifics
 
-- Anthropic signs each reasoning block and requires it back during tool use, but otherwise strips reasoning from prior turns automatically.
+- Anthropic signs each reasoning block and keeps reasoning from all prior turns in context, billed as input.
 - OpenAI discards reasoning between turns by default, or returns encrypted reasoning you can pass back when running stateless.
 - Google uses thought signatures — encrypted representations of the reasoning state that you must return in later turns.
 
 ## References
 
-- [Extended thinking | Anthropic](https://platform.claude.com/docs/en/build-with-claude/extended-thinking)
-- [Adaptive thinking | Anthropic](https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking)
+- [Thinking | Anthropic](https://platform.claude.com/docs/en/build-with-claude/thinking)
 - [Reasoning models | OpenAI](https://developers.openai.com/api/docs/guides/reasoning)
 - [Gemini thinking | Google](https://ai.google.dev/gemini-api/docs/thinking)

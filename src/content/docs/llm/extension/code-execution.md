@@ -13,7 +13,7 @@ As a server-side tool, it runs in the platform's sandbox, isolated from your own
 ## Considerations
 
 - Python is the primary language for code execution.
-- Sandboxes have no, or tightly limited, network access.
+- Sandboxes have no network access by default.
 
 ## Specifics
 

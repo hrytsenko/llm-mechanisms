@@ -14,7 +14,6 @@ The cached prefix is the stable head of the prompt — system instructions, tool
 
 - Prefixes below a model-specific minimum (0.5K–4K tokens) aren't cached.
 - Extend cache retention when requests are spaced beyond the idle window.
-- Cache writes cost more than regular input, so caching pays off only when the prefix is reused.
 
 ## Specifics
 

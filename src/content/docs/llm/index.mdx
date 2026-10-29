@@ -13,9 +13,9 @@ This guide covers the mechanisms you use to call a model directly over its HTTP 
 
 Across these mechanisms, each vendor leans a consistent way: **Anthropic toward the model, OpenAI toward developer choice, Google toward multimodal and scale.** These are tendencies, not rules — each vendor borrows from the others where it makes sense — but the pattern is stable enough to be worth naming.
 
-**Anthropic** pushes control into the model rather than the API. Sampling knobs are minimal — and rejected outright on its newest models, which steer via prompting and an effort lever instead. Refusals are trained-in (constitutional) rather than configured, and safety exposes no developer-facing threshold settings. The bet is that a well-trained model plus prompting beats fine-grained parameters.
+**Anthropic** pushes control into the model rather than the API. It offers no sampling knobs — models steer via prompting and an effort lever instead. Refusals are trained-in (constitutional) rather than configured, and safety exposes no developer-facing threshold settings. The bet is that a well-trained model plus prompting beats fine-grained parameters.
 
-**OpenAI** exposes the most surface area and lets you choose the path. It offers both server-managed and client-managed conversation state, the widest set of sampling controls, a standalone moderation classifier you enforce yourself, an offline tokenizer alongside the counting endpoint, and MCP connectors with per-call approval. Where others pick one default, OpenAI usually offers both and hands you the decision.
+**OpenAI** exposes the most surface area and lets you choose the path. It offers both server-managed and client-managed conversation state, a standalone moderation classifier you enforce yourself, an offline tokenizer alongside the counting endpoint, and MCP connectors with per-call approval. Where others pick one default, OpenAI usually offers both and hands you the decision.
 
 **Google** builds around multimodal content, treating images, PDFs, and other media as first-class input with per-modality token accounting and resolution controls. It also tends toward the highest ceilings for content — larger context, higher page and image counts — which makes it attractive at scale.
 
