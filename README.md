@@ -9,12 +9,8 @@ Published at [Hrytsenko - LLM Mechanisms](https://hrytsenko.github.io/llm-mechan
 ```text
 src/content/docs/
   index.mdx                  # landing page
-  llm/                       # LLM Fundamentals
-    index.mdx                # mechanisms by group
-    <group>/<mechanism>.md   # mechanism explanation
-    ...
-  agents/                    # Agent Fundamentals
-    index.mdx                # mechanisms by group
+  <guide>/                   # llm or agents
+    index.mdx                # guide overview
     <group>/<mechanism>.md   # mechanism explanation
     ...
 ```
@@ -32,7 +28,7 @@ sidebar:
 
 One-sentence definition.
 
-Additional notes, in a couple of paragraphs.
+Additional notes, in one paragraph.
 
 ## Considerations
 
