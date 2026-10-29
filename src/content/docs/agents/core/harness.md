@@ -8,16 +8,12 @@ sidebar:
 
 The harness is everything around the model that isn't the model — it ties together tools, context, and memory to turn a model that answers questions into an agent that completes tasks.
 
-The harness manages conversation and context, preserves sessions and memory, invokes tools and spawns subagents, and imposes controls and guardrails. Each of these is covered in its own concept; the harness is what owns them.
-
-The central design question is harness thickness: how much logic lives in the harness versus the model. Every harness component encodes an assumption about what the model cannot do on its own — so as models improve, some scaffolding should be removed rather than extended.
-
-Providers ship harnesses as development kits, typically called agent SDKs, and align them with their own models to exploit strengths and cover weaknesses.
+The harness manages conversation and context, preserves sessions and memory, invokes tools and spawns subagents, and imposes controls and guardrails — each a mechanism of its own, owned by the harness. Every component encodes an assumption about what the model cannot do on its own, so the central design question is harness thickness: how much logic lives in the harness versus the model. Vendors ship harnesses as development kits, typically called agent SDKs, aligned with their own models to exploit strengths and cover weaknesses.
 
 ## Considerations
 
 - Prefer the harness's built-in capabilities and conventions — models are often trained against them.
-- Revisit custom capabilities as models and harnesses improve — replace your own scaffolding with theirs where you can.
+- Revisit custom scaffolding as models and harnesses improve — remove what the model now handles and replace the rest with built-ins.
 
 ## Specifics
 

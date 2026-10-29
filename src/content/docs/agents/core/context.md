@@ -8,24 +8,24 @@ sidebar:
 
 The context is the combination of instructions and state that the model receives to decide its next action toward completing the task.
 
-The key limitation of context is its size: as it grows, the model's ability to make optimal decisions degrades, giving diminishing returns. To manage this, the harness curates the context on each turn, actively managing its content. Curation splits into two parts: assembly, where the harness decides what to include and how, and reduction, where it decides what to exclude and how. Reduction has several main forms — compacting the conversation under various strategies, or trimming content that has lost its importance, stale tool results being the canonical example.
+The key limitation of context is its size: as it grows, the model's ability to make optimal decisions degrades, giving diminishing returns. To manage this, the harness curates the context on each turn. Curation splits into two parts: assembly, where the harness decides what to include and how, and reduction, where it decides what to exclude and how. Reduction takes two main forms: compacting older history into a summary, and trimming content that has lost its relevance, stale tool results being the canonical example.
 
-## Consideration
+## Considerations
 
-- Load durable facts before defining the agent's task and avoid their reduction where possible.
-- Provide guiding instructions for how compaction should summarize, where possible.
+- Load durable facts ahead of the task, in instructions that survive reduction.
+- Tell the compactor what to preserve when it summarizes.
 - Use progressive disclosure — postpone or avoid loading facts until they are needed.
 
 ## Specifics
 
-- Anthropic loads durable facts at the start from the system prompt and injected project context (`CLAUDE.md`); it runs automatic compaction near the window limit and exposes primitives to clear stale context explicitly.
-- OpenAI gives programmatic access to the turn's context through input filters and hooks, lets sessions run automatic compaction, and ships a tool-output trimmer that previews oversized results from older turns.
+- Anthropic re-injects durable facts from `CLAUDE.md` into every request, so they survive the compaction that runs automatically near the window limit.
+- OpenAI lets you rewrite the model input before each call, ships a trimmer that previews oversized tool outputs from older turns, and compacts through a dedicated session type.
 - Google compiles the context over the session's event stream and compacts it either by token threshold (retaining recent events) or over a sliding window with a configurable summarizer.
 
 ## References
 
-- [System prompts | Anthropic](https://code.claude.com/docs/en/agent-sdk/modifying-system-prompts)
-- [Context management | OpenAI](https://openai.github.io/openai-agents-python/context/)
-- [Tool trimmer | OpenAI](https://openai.github.io/openai-agents-python/ref/extensions/tool_output_trimmer/)
+- [Context | Anthropic](https://code.claude.com/docs/en/agent-sdk/agent-loop#the-context-window)
+- [Context | OpenAI](https://openai.github.io/openai-agents-python/context/)
+- [Compaction | OpenAI](https://openai.github.io/openai-agents-python/sessions/#openai-responses-compaction-sessions)
 - [Context | Google](https://adk.dev/context/)
-- [State | Google](https://adk.dev/sessions/state/)
+- [Compaction | Google](https://adk.dev/context/compaction/)

@@ -14,7 +14,6 @@ The default framing is Thought → Action → Observation (ReAct): the model rea
 
 - Check the termination reason before consuming the result.
 - Cap the maximum number of turns — without a cap, a model that cannot complete the task may loop indefinitely.
-- Manage context across long loops — history is resent every turn, so agents use several times the tokens of a single chat turn.
 - Give the agent tools to verify its work — self-checking inside the same context is weak, since the model tends to rationalize rather than evaluate.
 
 ## Specifics
@@ -25,6 +24,6 @@ The default framing is Thought → Action → Observation (ReAct): the model rea
 
 ## References
 
-- [Agent loop | Anthropic](https://code.claude.com/docs/en/agent-sdk/agent-loop)
-- [Running agents | OpenAI](https://openai.github.io/openai-agents-python/running_agents/)
-- [Event Loop | Google](https://adk.dev/runtime/event-loop/)
+- [Loop | Anthropic](https://code.claude.com/docs/en/agent-sdk/agent-loop)
+- [Loop | OpenAI](https://openai.github.io/openai-agents-python/running_agents/)
+- [Loop | Google](https://adk.dev/runtime/event-loop/)
