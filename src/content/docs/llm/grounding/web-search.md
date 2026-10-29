@@ -8,9 +8,7 @@ sidebar:
 
 Web search lets the model retrieve live information from the internet, grounding the answer with this information.
 
-Platforms provide a server-side web search tool that returns results with source citations. This lets models overcome the knowledge cutoff and reduce hallucination by grounding answers in real sources.
-
-Some platforms have the related capability of directly reading a specific URL rather than discovering sources through search.
+Platforms provide a server-side web search tool that returns results with source citations, letting models overcome the knowledge cutoff and reduce hallucination by grounding answers in real sources. A related web fetch tool reads a specific URL directly rather than discovering sources through search.
 
 ## Considerations
 

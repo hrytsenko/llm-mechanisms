@@ -8,13 +8,12 @@ sidebar:
 
 Vision input lets the model reason over visual content such as images and PDFs.
 
-Under the hood, models use native vision on images (common formats include JPEG, PNG, and WebP). PDFs are typically handled by dual extraction: the model pulls the embedded text and also renders each page as an image, tokenizing the two independently.
-
-A request can contain multiple images (up to a per-platform cap), enabling cross-image reasoning. To control cost, most platforms expose a resolution lever that trades tokens for fidelity; PDFs also carry page-count and size limits.
+Under the hood, models use native vision on images (common formats include JPEG, PNG, and WebP), and a request can contain multiple images for cross-image reasoning. PDFs are handled by dual extraction: the model pulls the embedded text and also renders each page as an image, tokenizing the two independently.
 
 ## Considerations
 
-- Cost of visual input scales with image size and resolution.
+- Use the resolution lever to trade tokens for fidelity.
+- Requests are subject to image-count limits, and PDFs to page-count and size limits.
 - PDF is the only document format with visual understanding; other formats fall back to text.
 
 ## Specifics

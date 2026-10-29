@@ -8,14 +8,13 @@ sidebar:
 
 File input lets the model process file content or use it as grounding during generation.
 
-For small, one-off files, platforms support inline delivery (`base64`); for large or reused files, a Files API lets you upload once and reference it many times; and some platforms accept a public URL the model fetches directly.
-
-Files uploaded via the Files API are retained, but retention policies, file-size caps, and total storage differ per platform.
+For small, one-off files, platforms support inline delivery (`base64`); for large or reused files, a Files API lets you upload once and reference it many times; and a URL lets the model fetch the file directly.
 
 ## Considerations
 
 - Put large files before dynamic input so the prefix stays cacheable.
 - The URL channel requires publicly reachable URLs.
+- Uploaded files are subject to file-size and total-storage limits.
 
 ## Specifics
 
