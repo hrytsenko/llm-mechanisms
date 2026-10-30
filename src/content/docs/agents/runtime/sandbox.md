@@ -1,16 +1,14 @@
 ---
 title: "Sandbox"
-description: "A sandbox lets the agent execute model-generated commands and code safely, setting the inner boundary on what that execution can touch on the filesystem and network."
+description: "A sandbox is the inner boundary around the code and commands the agent executes."
 tier: situational
 sidebar:
   order: 2
 ---
 
-A sandbox lets the agent execute model-generated commands and code safely, setting the inner boundary on what that execution can touch on the filesystem and network.
+A sandbox is the inner boundary around the code and commands the agent executes.
 
-Executing model-generated code and shell commands is the agent's most dangerous capability, because it runs with real privileges, and a single prompt injection can turn it toward leaking credentials or exfiltrating data. To contain this, platforms typically wrap the shell inside the host process or move execution to a separate container.
-
-A sandbox guards two primary boundaries: filesystem and network. Filesystem isolation confines read and write operations to the working directory only. Network isolation confines outbound traffic to allowed endpoints only. The two are interdependent — either alone is defeated by the other's absence.
+Executing model-generated code and shell commands is the agent's most dangerous capability: it runs with real privileges, and a single prompt injection can turn it toward leaking credentials or exfiltrating data. A sandbox contains it either inside the host process, by wrapping the shell, or in a separate container, and guards two boundaries: filesystem isolation confines reads and writes to the working directory, and network isolation confines outbound traffic to allowed endpoints. The two are interdependent — either alone is defeated by the other's absence.
 
 ## Considerations
 
@@ -20,11 +18,11 @@ A sandbox guards two primary boundaries: filesystem and network. Filesystem isol
 ## Specifics
 
 - Anthropic wraps the shell in-host with OS primitives, enforcing filesystem and network limits on the shell tool and its children as a layer complementary to permissions; the boundary is the process, not a separate container.
-- OpenAI provisions the sandbox as a separate execution environment, deliberately splitting the harness's control plane from the sandbox's execution and isolating credentials from it.
-- Google delivers the sandbox through a dedicated code executor rather than the general tool path, with hermetic no-network environments recommended and executors that do not inherit the agent's cloud permissions.
+- OpenAI provisions the sandbox as a separate execution environment, deliberately splitting it from the harness, which keeps approvals, tracing, and run state outside.
+- Google delivers the sandbox through dedicated code executors rather than the general tool path, and recommends hermetic environments without network access.
 
 ## References
 
-- [Sandboxing | Anthropic](https://code.claude.com/docs/en/sandboxing)
-- [Sandbox agents | OpenAI](https://openai.github.io/openai-agents-python/sandbox_agents/)
-- [Code execution | Google](https://adk.dev/integrations/code-execution/)
+- [Sandbox | Anthropic](https://code.claude.com/docs/en/sandboxing)
+- [Sandbox | OpenAI](https://openai.github.io/openai-agents-python/sandbox/guide/)
+- [Sandbox | Google](https://adk.dev/safety/#sandboxed-code-execution)

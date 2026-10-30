@@ -1,12 +1,12 @@
 ---
 title: "Deployment"
-description: "Deployment is where the agent process runs — the outer boundary around the whole agent, concerned with its isolation and scaling rather than with isolating what it executes."
+description: "Deployment is the outer boundary around the whole agent, where its process runs."
 tier: foundational
 sidebar:
   order: 1
 ---
 
-Deployment is where the agent process runs — the outer boundary around the whole agent, concerned with its isolation and scaling rather than with isolating what it executes.
+Deployment is the outer boundary around the whole agent, where its process runs.
 
 Platforms support two variants for deploying agents: self-hosted, where your infrastructure runs the agent instances, and managed, where the platform runs them for you. The self-hosted approach ranges from a lighter container-based variant to a heavier VM-based one, balancing isolation against complexity.
 
@@ -18,12 +18,12 @@ Platforms support two variants for deploying agents: self-hosted, where your inf
 ## Specifics
 
 - Anthropic offers Managed Agents, an API-first hosted runtime; migrating to it from a self-hosted deployment requires rebuilding the agent rather than porting it as-is.
-- OpenAI offers a clear path to evolve the agent from local run to self-hosted to hosted backend, using the same agent definition, portable across execution backends.
-- Google spans the spectrum with several runtimes — Kubernetes Engine for self-managed containers, Cloud Run for serverless containers, and Agent Engine as the fully managed runtime.
+- OpenAI keeps the same agent definition as execution moves from a local run to Docker to a hosted sandbox provider — only the sandbox client changes.
+- Google spans the spectrum with several runtimes — Kubernetes Engine for self-managed containers, Cloud Run for serverless containers, and Agent Runtime as the fully managed runtime.
 
 ## References
 
 - [Self-hosting | Anthropic](https://code.claude.com/docs/en/agent-sdk/hosting)
 - [Managed Agents | Anthropic](https://platform.claude.com/docs/en/managed-agents/overview)
-- [Sandbox agents | OpenAI](https://openai.github.io/openai-agents-python/sandbox_agents/)
-- [Deployments | Google](https://adk.dev/deploy/)
+- [Sandbox clients | OpenAI](https://openai.github.io/openai-agents-python/sandbox/clients/)
+- [Deployment | Google](https://adk.dev/deploy/)
