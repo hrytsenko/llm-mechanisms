@@ -1,12 +1,12 @@
 ---
 title: "Internal reasoning"
-description: "Internal reasoning lets the model spend tokens on an internal chain of thought before producing its visible answer."
+description: "Internal reasoning lets the model think in hidden tokens before it answers."
 tier: situational
 sidebar:
   order: 3
 ---
 
-Internal reasoning lets the model spend tokens on an internal chain of thought before producing its visible answer.
+Internal reasoning lets the model think in hidden tokens before it answers.
 
 Internal reasoning trades tokens for higher quality on hard, multi-step tasks. Under the hood, the model reasons in a dedicated phase before the response: it breaks the problem down, considers alternatives, and self-checks. Platforms return at most a summary of the reasoning but bill for all of it, so the billed token count won't match what you see.
 

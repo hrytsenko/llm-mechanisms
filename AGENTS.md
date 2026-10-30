@@ -40,4 +40,4 @@ Label each link "Label | Vendor" so readers can scan and compare: the mechanism'
 
 ### Use the latest APIs and SDKs
 
-Each guide builds on the latest offering of each platform. The LLM guide covers the latest API families: the Anthropic Messages API, the OpenAI Responses API, and the Google Interactions API. The agents guide covers the agent SDKs: the Claude Agent SDK, the OpenAI Agents SDK, and the Google Agent Development Kit. Don't describe or link superseded offerings, such as OpenAI's Chat Completions, even where they offer more.
+Each guide builds on the latest offering of each platform. The LLM guide covers the latest API families: the Anthropic Messages API, the OpenAI Responses API, and the Google Interactions API. The agents guide covers the agent SDKs: the Claude Agent SDK, the OpenAI Agents SDK, and the Google Agent Development Kit. Other developer guides of the vendor, such as Claude Code or managed hosting guides, are fine too, but don't describe or link superseded offerings, such as OpenAI's Chat Completions, even where they offer more.

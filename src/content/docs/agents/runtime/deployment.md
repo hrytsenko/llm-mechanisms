@@ -23,7 +23,7 @@ Platforms support two variants for deploying agents: self-hosted, where your inf
 
 ## References
 
-- [Self-hosting | Anthropic](https://code.claude.com/docs/en/agent-sdk/hosting)
-- [Managed Agents | Anthropic](https://platform.claude.com/docs/en/managed-agents/overview)
+- [Deployment | Anthropic](https://code.claude.com/docs/en/agent-sdk/hosting)
+- [Managed hosting | Anthropic](https://platform.claude.com/docs/en/managed-agents/overview)
 - [Sandbox clients | OpenAI](https://openai.github.io/openai-agents-python/sandbox/clients/)
 - [Deployment | Google](https://adk.dev/deploy/)

@@ -27,5 +27,5 @@ Tools fall into four categories by who ships them and where they run: hosted too
 - [Custom tools | Anthropic](https://code.claude.com/docs/en/agent-sdk/custom-tools)
 - [Tools | OpenAI](https://openai.github.io/openai-agents-python/tools/)
 - [MCP | OpenAI](https://openai.github.io/openai-agents-python/mcp/)
-- [Tools | Google](https://adk.dev/tools-custom/)
+- [Custom tools | Google](https://adk.dev/tools-custom/)
 - [Integrations | Google](https://adk.dev/integrations/)

@@ -20,6 +20,7 @@ Batch processing trades real-time responses for a discount on input and output t
 
 - Anthropic takes requests inline, with no file upload.
 - OpenAI takes requests as an uploaded JSONL file.
+- Google has no batch processing in its latest API.
 
 ## References
 

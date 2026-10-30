@@ -13,7 +13,7 @@ Truncation arises when the model cannot fit its output within the token limit se
 ## Considerations
 
 - Check every response for edge cases, since platforms return them as successful responses.
-- Retry transient errors, such as rate limits and overloads, with backoff.
+- Add moderation as the application opens up to a wider audience — refusals cover only what the model itself declines.
 
 ## Specifics
 
@@ -26,5 +26,5 @@ Truncation arises when the model cannot fit its output within the token limit se
 - [Stop reasons | Anthropic](https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons)
 - [Refusals | Anthropic](https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback)
 - [Moderation | OpenAI](https://developers.openai.com/api/docs/guides/moderation)
-- [Error handling | Google](https://ai.google.dev/gemini-api/docs/api-errors)
+- [Blocked codes | Google](https://ai.google.dev/gemini-api/docs/api-errors#generation-blocked-codes)
 - [Safety settings | Google](https://ai.google.dev/gemini-api/docs/safety-settings)

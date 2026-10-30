@@ -13,8 +13,8 @@ The default framing is Thought → Action → Observation (ReAct): the model rea
 ## Considerations
 
 - Check how the run ended before consuming the result — stopping at the turn limit or on an error is not completion.
-- Cap the maximum number of turns — without a cap, a model that cannot complete the task may loop indefinitely.
-- Give the agent tools to verify its work — self-checking inside the same context is weak, since the model tends to rationalize rather than evaluate.
+- Cap the maximum number of turns — without a cap, an agent that cannot complete the task may loop indefinitely.
+- Give the agent tools to verify its work before finishing — on its own, the model tends to rationalize rather than evaluate.
 
 ## Specifics
 

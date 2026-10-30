@@ -1,12 +1,12 @@
 ---
 title: "Harness"
-description: "The harness is everything around the model that turns it from answering questions into completing tasks."
+description: "The harness is everything around the model that lets it complete tasks, not just answer questions."
 tier: foundational
 sidebar:
   order: 1
 ---
 
-The harness is everything around the model that turns it from answering questions into completing tasks.
+The harness is everything around the model that lets it complete tasks, not just answer questions.
 
 The harness manages conversation and context, preserves sessions and memory, invokes tools and spawns subagents, and imposes controls and guardrails — each a mechanism of its own, owned by the harness. Every component encodes an assumption about what the model cannot do on its own, so the central design question is harness thickness: how much logic lives in the harness versus the model. Vendors ship harnesses as development kits, typically called agent SDKs.
 
