@@ -15,16 +15,15 @@ When an action requires approval, the harness pauses and waits for a verdict —
 - Reserve approvals for consequential actions — those that are irreversible or costly.
 - Build notification and timeout yourself — harnesses do nothing with a stale request.
 - Re-check state on resume — what was valid at pause time may be stale.
-- Explain the reason for a denial to guide the model's next attempt.
 
 ## Specifics
 
 - Anthropic places approvals at the end of a layered permission pipeline (after hooks, rules, and permission mode), via a runtime callback.
-- OpenAI marks tools that pending approvals and serializes the paused run, so approvals can span processes and long waits.
+- OpenAI marks tools that need approval and serializes the paused run, so approvals can span processes and long waits.
 - Google pauses the loop via a tool-confirmation flag until the user responds.
 
 ## References
 
 - [Approvals | Anthropic](https://code.claude.com/docs/en/agent-sdk/user-input)
-- [Human-in-the-loop | OpenAI](https://openai.github.io/openai-agents-python/human_in_the_loop/)
-- [Action confirmation | Google](https://adk.dev/tools-custom/confirmation/)
+- [Approvals | OpenAI](https://openai.github.io/openai-agents-python/human_in_the_loop/)
+- [Approvals | Google](https://adk.dev/tools-custom/confirmation/)
