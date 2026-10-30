@@ -26,18 +26,18 @@ export default defineConfig({
 			customCss: ['./src/styles/custom.css'],
 			sidebar: [
 				{
-					label: 'LLM Fundamentals',
+					label: 'LLMs',
 					items: [
-						{ label: 'Overview', slug: 'llm' },
-						group('Prompting', 'llm/prompting'),
-						group('Generation', 'llm/generation'),
-						group('Grounding', 'llm/grounding'),
-						group('Extension', 'llm/extension'),
-						group('Execution', 'llm/execution'),
+						{ label: 'Overview', slug: 'llms' },
+						group('Prompting', 'llms/prompting'),
+						group('Generation', 'llms/generation'),
+						group('Grounding', 'llms/grounding'),
+						group('Extension', 'llms/extension'),
+						group('Execution', 'llms/execution'),
 					],
 				},
 				{
-					label: 'Agent Fundamentals',
+					label: 'Agents',
 					items: [
 						{ label: 'Overview', slug: 'agents' },
 						group('Core', 'agents/core'),

@@ -6,11 +6,11 @@ See [README.md](README.md) for the content layout, the page template, and how to
 
 ### Landing page
 
-The landing page ([src/content/docs/index.mdx](src/content/docs/index.mdx)) holds only the title, the tagline, the scope checks and tiers, and the guide cards. The scope checks and tiers are explained only there; guide overviews link to it.
+The landing page ([src/content/docs/index.mdx](src/content/docs/index.mdx)) holds only the title, the tagline, the scope checks and tiers, and the guide cards. The scope checks and tiers are explained only there.
 
 ### Guide overviews
 
-A guide overview, such as [src/content/docs/llm/index.mdx](src/content/docs/llm/index.mdx), opens with a short paragraph on what the guide covers, linking to the other guide and to the landing page. A Tendencies section follows, then one section per group with a one-line summary and the group's mechanisms.
+A guide overview, such as [src/content/docs/llms/index.mdx](src/content/docs/llms/index.mdx), opens with one sentence on what the guide covers. It stands on its own, without links or references to the other guide or the landing page. A Tendencies section follows, then one section per group with a one-line summary and the group's mechanisms.
 
 Tendencies summarize how each vendor leans across the guide: one sentence contrasting the three vendors, then one paragraph per vendor. Derive them only from the Specifics of the guide's own mechanisms, since a vendor can lean differently in each guide. Describe the leanings in general terms, without product names or exact numbers, and keep the vendor paragraphs close in length.
 

@@ -9,7 +9,7 @@ Published at [Hrytsenko - LLM Mechanisms](https://hrytsenko.github.io/llm-mechan
 ```text
 src/content/docs/
   index.mdx                  # landing page
-  <guide>/                   # llm or agents
+  <guide>/                   # llms or agents
     index.mdx                # guide overview
     <group>/<mechanism>.md   # mechanism explanation
     ...
