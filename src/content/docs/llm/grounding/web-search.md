@@ -1,14 +1,14 @@
 ---
 title: "Web search"
-description: "Web search lets the model retrieve live information from the internet, grounding the answer with this information."
+description: "Web search grounds the model's answer in live information from the internet."
 tier: situational
 sidebar:
   order: 3
 ---
 
-Web search lets the model retrieve live information from the internet, grounding the answer with this information.
+Web search grounds the model's answer in live information from the internet.
 
-Platforms provide a server-side web search tool that returns results with source citations, letting models overcome the knowledge cutoff and reduce hallucination by grounding answers in real sources. A related web fetch tool reads a specific URL directly rather than discovering sources through search.
+Platforms provide a server-side web search tool that returns results with source citations, letting models overcome the knowledge cutoff and reduce hallucination. A related web fetch tool reads a specific URL directly rather than discovering sources through search.
 
 ## Considerations
 

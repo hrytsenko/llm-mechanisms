@@ -1,12 +1,12 @@
 ---
 title: "File search"
-description: "File search lets the model run retrieval over a body of documents, grounding the answer with citations to them."
+description: "File search lets the model retrieve from a body of documents and cite them."
 tier: situational
 sidebar:
   order: 4
 ---
 
-File search lets the model run retrieval over a body of documents, grounding the answer with citations to them.
+File search lets the model retrieve from a body of documents and cite them.
 
 Under the hood, file search requires machinery for document chunking, embedding, and indexing, either hosted by the platform or run by your own retrieval system. Only the relevant chunks are fetched at query time, so the corpus can far exceed the context window.
 

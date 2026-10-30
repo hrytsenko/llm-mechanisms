@@ -1,12 +1,12 @@
 ---
 title: "Trajectories"
-description: "A trajectory is the recorded sequence of everything the agent did on a run, capturing the path it took to produce its output."
+description: "A trajectory is the recorded path the agent took to produce its output."
 tier: situational
 sidebar:
   order: 2
 ---
 
-A trajectory is the recorded sequence of everything the agent did on a run, capturing the path it took to produce its output.
+A trajectory is the recorded path the agent took to produce its output.
 
 It holds the messages, tool calls, tool results, reasoning, and handoffs, in order. Trajectories answer how predictably and efficiently the agent reached its result. On predictability, an agent may arrive at the right output through an unexpected path — for instance, consistently recovering from invalid tool calls rather than calling them correctly the first time. On efficiency, it may reach the same result at higher cost — for instance, escalating to a stronger model on tasks that didn't need it. The final output alone hides both; the trajectory is what exposes them.
 

@@ -1,18 +1,17 @@
 ---
 title: "Telemetry"
-description: "Telemetry is the operational signal an agent emits — traces, metrics, and logs covering the models and tools used, token counts and cost, and errors."
+description: "Telemetry is the operational signal an agent emits as traces, metrics, and logs."
 tier: foundational
 sidebar:
   order: 1
 ---
 
-Telemetry is the operational signal an agent emits — traces, metrics, and logs covering the models and tools used, token counts and cost, and errors.
+Telemetry is the operational signal an agent emits as traces, metrics, and logs.
 
 Telemetry gives a near real-time view of an agent's operational health and expense, surfacing faults that a correct final answer would otherwise hide, such as latency creep, cost spikes, or a tool timing out before the agent recovers. Harnesses propagate trace context from the host application and across agent boundaries, combining both into a single timeline.
 
 ## Considerations
 
-- Watch operational health, focusing on latency and cost rather than the agent's decisions.
 - Strip sensitive data such as prompts from telemetry unless that content is critically needed.
 - Track cost per turn, not per call — resent context makes long loops grow superlinearly.
 

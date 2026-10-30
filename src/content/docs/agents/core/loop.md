@@ -1,18 +1,18 @@
 ---
 title: "Loop"
-description: "The agent loop is the execution cycle where the model receives instructions and task, decides on an action, consumes the result as new context, and repeats until the task is done or the turn limit is reached."
+description: "The agent loop repeats model decisions and their actions until the task is done."
 tier: foundational
 sidebar:
   order: 2
 ---
 
-The agent loop is the execution cycle where the model receives instructions and task, decides on an action, consumes the result as new context, and repeats until the task is done or the turn limit is reached.
+The agent loop repeats model decisions and their actions until the task is done.
 
-The default framing is Thought → Action → Observation (ReAct): the model reasons, requests an action, and observes the result the harness returns. The observation either drives the next iteration or completes the task. Observation becomes verification when you give the model tools and instructions to check its own work. Under the hood it's a regular while loop that lets the model interact with a harness to move toward task completion.
+The default framing is Thought → Action → Observation (ReAct): the model reasons, requests an action, and observes the result the harness returns as new context. Under the hood it's a plain while loop, which ends when the agent completes the task or reaches the turn limit.
 
 ## Considerations
 
-- Check the termination reason before consuming the result.
+- Check how the run ended before consuming the result — stopping at the turn limit or on an error is not completion.
 - Cap the maximum number of turns — without a cap, a model that cannot complete the task may loop indefinitely.
 - Give the agent tools to verify its work — self-checking inside the same context is weak, since the model tends to rationalize rather than evaluate.
 

@@ -8,7 +8,7 @@ sidebar:
 
 File input lets the model process file content or use it as grounding during generation.
 
-For small, one-off files, platforms support inline delivery (`base64`); for large or reused files, a Files API lets you upload once and reference it many times; and a URL lets the model fetch the file directly.
+For small, one-off files, platforms support inline delivery as base64; for large or reused files, a Files API lets you upload once and reference it many times; and a URL lets the model fetch the file directly.
 
 ## Considerations
 

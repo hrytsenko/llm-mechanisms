@@ -1,19 +1,19 @@
 ---
 title: "Tools"
-description: "Tools are the capabilities the harness gives the model so it can act — fetching data, running code, or accessing the filesystem."
+description: "Tools are the capabilities the harness gives the model so it can act."
 tier: foundational
 sidebar:
   order: 1
 ---
 
-Tools are the capabilities the harness gives the model so it can act — fetching data, running code, or accessing the filesystem.
+Tools are the capabilities the harness gives the model so it can act.
 
 Tools fall into four categories by who ships them and where they run: hosted tools ship with the platform and run on it, such as web search and code execution; built-in tools ship with the harness and run in the agent environment, such as file search, file access, and shell commands; custom tools ship with your application and run in the agent environment; and MCP tools ship from third parties and run in the agent's or a third-party environment. Tool output is model input: agent tools return structured, parseable results, which is why a dedicated search tool exists alongside a shell that could run the same command.
 
 ## Considerations
 
 - Define a minimum set of tools explicitly — the tool list is the first security boundary.
-- Prefer built-in or pre-built tools, which are optimized for agents rather than humans.
+- Prefer hosted or built-in tools over custom equivalents.
 
 ## Specifics
 

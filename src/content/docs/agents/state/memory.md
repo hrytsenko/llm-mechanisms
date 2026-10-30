@@ -1,20 +1,19 @@
 ---
 title: "Memory"
-description: "Memory lets an agent carry knowledge between sessions, so it improves over time instead of starting fresh each run."
+description: "Memory lets an agent carry knowledge between sessions instead of starting fresh each run."
 tier: situational
 sidebar:
   order: 2
 ---
 
-Memory lets an agent carry knowledge between sessions, so it improves over time instead of starting fresh each run.
+Memory lets an agent carry knowledge between sessions instead of starting fresh each run.
 
 There are two recognizable types: reference memory (read-only, authored by you) and learned memory (read-write, accumulated by the agent or platform). Reference memory is typically just files the agent reads at session start; learned memory loads through progressive disclosure — a summary or index at the start of a run, with details pulled in on demand. Writing is a separate flow: the agent records memories during the run, or the platform extracts and consolidates them after the session completes.
 
 ## Considerations
 
-- Curate what gets written — a bad memory persists and poisons every later run.
+- Curate what gets written — learned memory persists into every later run, so keep it accurate and free of sensitive data.
 - Instruct the platform what to keep when it consolidates memory.
-- Treat learned memory as sensitive, persistent data; filter before writing.
 
 ## Specifics
 

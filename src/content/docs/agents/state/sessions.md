@@ -1,12 +1,12 @@
 ---
 title: "Sessions"
-description: "Sessions accumulate the history of everything handled by the agent loop — user and model messages, tool and subagent invocations, and their results."
+description: "Sessions record the history of the agent loop — messages, tool calls, and their results."
 tier: foundational
 sidebar:
   order: 1
 ---
 
-Sessions accumulate the history of everything handled by the agent loop — user and model messages, tool and subagent invocations, and their results.
+Sessions record the history of the agent loop — messages, tool calls, and their results.
 
 Harnesses persist sessions in local (disk) or remote (database) stores so you can reuse them later. The two primary scenarios are continuing (or resuming) a session to keep working with prior context, and forking a session to explore an alternative without losing the original.
 

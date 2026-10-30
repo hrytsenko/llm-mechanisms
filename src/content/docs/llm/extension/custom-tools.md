@@ -14,7 +14,7 @@ The developer declares the available tools in the prompt. From there the model d
 
 - Keep tool definitions specific, precise, and non-overlapping.
 - Use calling mode to control tool calls per turn without editing the tool list.
-- Use strict schemas to guarantee valid arguments, or grammars for free-form inputs.
+- Use strict schemas to guarantee valid arguments.
 
 ## Specifics
 

@@ -1,12 +1,12 @@
 ---
 title: "Conversation state"
-description: "Conversation state is the multi-turn history of input and output messages that gives the model prior context on each turn."
+description: "Conversation state is the message history that gives the model context from prior turns."
 tier: foundational
 sidebar:
   order: 2
 ---
 
-Conversation state is the multi-turn history of input and output messages that gives the model prior context on each turn.
+Conversation state is the message history that gives the model context from prior turns.
 
 Models are stateless by nature, so they expect the full conversation state on each request. The conversation state is managed either by client or server. Client-side management means the application builds and resends the state on each request. Server-side management means the platform stores the state and returns a reference that the application passes back with the next request.
 
@@ -17,7 +17,7 @@ Models are stateless by nature, so they expect the full conversation state on ea
 
 ## Specifics
 
-- Anthropic manages state client-side only (you always resend the full history).
+- Anthropic manages state client-side only.
 - OpenAI and Google default to server-side state, with a client-side fallback.
 
 ## References

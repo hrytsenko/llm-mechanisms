@@ -13,11 +13,11 @@ This guide covers the mechanisms you use to call a model directly over its HTTP 
 
 Across these mechanisms, each vendor leans a consistent way: **Anthropic toward explicit control, OpenAI toward options, Google toward multimodal input.** These are tendencies, not rules.
 
-**Anthropic** leaves control to the application: it resends the conversation, marks what to cache, and brings its own retrieval. Safety is the exception: safety classifiers are built in, refuse through a dedicated stop reason, and have no thresholds to tune.
+**Anthropic** leaves control to the application: it resends the conversation, marks what to cache, and brings its own retrieval. Safety is the exception: safety classifiers are built in and refuse through a dedicated stop reason.
 
 **OpenAI** offers the most options and leaves the choice to you: implicit or explicit-only caching, schema or grammar-constrained tool inputs, a standalone moderation service, and an offline tokenizer next to the counting endpoint.
 
-**Google** builds around multimodal input, with per-modality token counts and the most images per request. Elsewhere it leaves less to configure: caching is implicit only, and uploaded files expire after 48 hours.
+**Google** builds around multimodal input, with per-modality token counts and the most images per request. Elsewhere it leaves less to configure: caching is implicit only, and uploaded files expire automatically.
 
 ## Prompting
 

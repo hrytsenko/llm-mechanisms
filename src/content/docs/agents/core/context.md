@@ -1,12 +1,12 @@
 ---
 title: "Context"
-description: "The context is the combination of instructions and state that the model receives to decide its next action toward completing the task."
+description: "The context is the instructions and state the model receives to decide its next action."
 tier: foundational
 sidebar:
   order: 3
 ---
 
-The context is the combination of instructions and state that the model receives to decide its next action toward completing the task.
+The context is the instructions and state the model receives to decide its next action.
 
 The key limitation of context is its size: as it grows, the model's ability to make optimal decisions degrades, giving diminishing returns. To manage this, the harness curates the context on each turn. Curation splits into two parts: assembly, where the harness decides what to include and how, and reduction, where it decides what to exclude and how. Reduction takes two main forms: compacting older history into a summary, and trimming content that has lost its relevance, stale tool results being the canonical example.
 

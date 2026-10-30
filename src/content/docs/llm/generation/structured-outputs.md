@@ -8,7 +8,7 @@ sidebar:
 
 Structured outputs constrain a model's response to strictly conform to a supplied schema.
 
-Structured outputs guarantee that model output is syntactically valid and parseable. Under the hood, the platform compiles the schema into a grammar, which adds latency on the first call with a new schema; later calls reuse the cached grammar.
+Under the hood, the platform compiles the schema into a grammar that constrains generation, which adds latency on the first call with a new schema; later calls reuse the cached grammar.
 
 ## Considerations
 

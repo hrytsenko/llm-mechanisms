@@ -1,14 +1,14 @@
 ---
 title: "Context window"
-description: "The context window is the total set of tokens the model can reference to generate a response, including the response itself."
+description: "The context window is the most tokens a model can handle, input and output combined."
 tier: foundational
 sidebar:
   order: 1
 ---
 
-The context window is the total set of tokens the model can reference to generate a response, including the response itself.
+The context window is the most tokens a model can handle, input and output combined.
 
-All models have a maximum context window size (~1M tokens on the frontier). The application assembles the input, including system instructions, prior conversation, and new input; the output, including internal reasoning, fills the rest.
+Frontier models reach ~1M tokens. The application assembles the input, including system instructions, prior conversation, and new input; the output, including internal reasoning, fills the rest.
 
 ## Considerations
 

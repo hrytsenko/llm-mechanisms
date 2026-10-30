@@ -8,7 +8,7 @@ sidebar:
 
 Hooks are deterministic callbacks on agent actions such as tool calling and subagent spawning.
 
-Hooks come in pairs around each action: a pre-hook runs before it, while the action can still be stopped, and a post-hook runs after it, once the result is known. A hook complements model behavior with code that runs for every action the model chooses, enforcing constraints the model cannot be relied on to respect. It covers the gap that model instructions are suggestions, not enforcement — no matter how closely the model follows them.
+Hooks come in pairs around each action: a pre-hook runs before it, while the action can still be stopped, and a post-hook runs after it, once the result is known. Because a hook is code that runs on every action the model chooses, it enforces constraints that model instructions can only suggest.
 
 ## Considerations
 
