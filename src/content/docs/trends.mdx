@@ -1,0 +1,14 @@
+---
+title: "Trends"
+description: "Major industry trends that bring vendors closer together."
+---
+
+export const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+Major industry trends that bring vendors closer together.
+
+## As of November 2026 (0.2.0)
+
+- **<a href={`${base}/llms/generation/internal-reasoning/`}>Internal reasoning</a>** — On their newest models, all three vendors keep reasoning from earlier turns, either in the client history or on the server.
+- **<a href={`${base}/llms/prompting/prompt-caching/`}>Prompt caching</a>** — Anthropic and OpenAI now both offer automatic and explicit breakpoints: Anthropic added automatic breakpoint placement, and OpenAI added explicit breakpoints.
+- **Sampling controls** — All three vendors are retiring sampling controls on their newest models: Anthropic rejects them, OpenAI accepts them only with reasoning off, and Google advises removing them.

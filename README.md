@@ -9,6 +9,7 @@ Published at [Hrytsenko - LLM Mechanisms](https://hrytsenko.github.io/llm-mechan
 ```text
 src/content/docs/
   index.mdx                  # landing page
+  trends.mdx                 # industry trends
   <guide>/                   # llms or agents
     index.mdx                # guide overview
     <group>/<mechanism>.md   # mechanism explanation

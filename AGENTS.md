@@ -22,6 +22,10 @@ A mechanism page opens with a one-sentence definition and one paragraph on how t
 
 Each part of the page carries different content: the paragraph builds on the definition instead of restating it, and Considerations and Specifics don't repeat the paragraph. Only the frontmatter description repeats the definition, as the page template in the README shows.
 
+### Trends page
+
+The trends page ([src/content/docs/trends.mdx](src/content/docs/trends.mdx)) has one section per version, newest first, headed by the month of the update and the version, such as "As of November 2026 (0.2.0)". Each section lists at most five industry trends that the version's updates reflect and that bring vendors closer together, such as adopting the same mechanism or retiring the same one. Leave out changes by a single vendor and editorial changes, such as rewording or restructuring. Each trend starts with the mechanism it concerns, linked to the mechanism page while the page exists, and names the change without explaining how the mechanism works.
+
 ## Writing
 
 ### Explain in prose

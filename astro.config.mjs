@@ -48,6 +48,7 @@ export default defineConfig({
 						group('Insight', 'agents/insight'),
 					],
 				},
+				{ label: 'Trends', slug: 'trends' },
 			],
 		}),
 	],
