@@ -26,4 +26,4 @@ Under the hood, models use native vision on images (common formats include JPEG,
 - [Vision input | Anthropic](https://platform.claude.com/docs/en/build-with-claude/vision)
 - [PDF support | Anthropic](https://platform.claude.com/docs/en/build-with-claude/pdf-support)
 - [Vision input | OpenAI](https://developers.openai.com/api/docs/guides/images-vision)
-- [Vision input | Google](https://ai.google.dev/gemini-api/docs/image-understanding)
+- [Vision input | Google](https://aistudio.google.com/docs/image-understanding)

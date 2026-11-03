@@ -21,4 +21,4 @@ Frontier models reach ~1M tokens. The application assembles the input, including
 - [Compaction | Anthropic](https://platform.claude.com/docs/en/build-with-claude/compaction)
 - [Conversation state | OpenAI](https://developers.openai.com/api/docs/guides/conversation-state)
 - [Compaction | OpenAI](https://developers.openai.com/api/docs/guides/compaction)
-- [Context window | Google](https://ai.google.dev/gemini-api/docs/long-context)
+- [Context window | Google](https://aistudio.google.com/docs/long-context)

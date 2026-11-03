@@ -28,4 +28,4 @@ You register a remote MCP server by its URL; the platform then lists the server'
 - [MCP tunnels | Anthropic](https://platform.claude.com/docs/en/agents-and-tools/mcp-tunnels/overview)
 - [MCP connectors | OpenAI](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
 - [MCP tunnels | OpenAI](https://developers.openai.com/api/docs/guides/secure-mcp-tunnels)
-- [MCP connectors | Google](https://ai.google.dev/gemini-api/docs/function-calling#mcp)
+- [MCP connectors | Google](https://aistudio.google.com/docs/function-calling#mcp)

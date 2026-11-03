@@ -24,4 +24,4 @@ Models are stateless by nature, so they expect the full conversation state on ea
 
 - [Messages API | Anthropic](https://platform.claude.com/docs/en/build-with-claude/working-with-messages)
 - [Conversation state | OpenAI](https://developers.openai.com/api/docs/guides/conversation-state)
-- [Interactions API | Google](https://ai.google.dev/gemini-api/docs/interactions-overview)
+- [Interactions API | Google](https://aistudio.google.com/docs/interactions-overview)

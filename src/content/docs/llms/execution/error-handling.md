@@ -26,5 +26,5 @@ Truncation arises when the model cannot fit its output within the token limit se
 - [Stop reasons | Anthropic](https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons)
 - [Refusals | Anthropic](https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback)
 - [Moderation | OpenAI](https://developers.openai.com/api/docs/guides/moderation)
-- [Blocked codes | Google](https://ai.google.dev/gemini-api/docs/api-errors#generation-blocked-codes)
-- [Safety settings | Google](https://ai.google.dev/gemini-api/docs/safety-settings)
+- [Blocked codes | Google](https://aistudio.google.com/docs/api-errors#generation-blocked-codes)
+- [Safety settings | Google](https://aistudio.google.com/docs/safety-settings)

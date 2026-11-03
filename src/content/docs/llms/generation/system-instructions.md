@@ -21,4 +21,4 @@ LLM APIs expose system instructions as a separate top-level parameter. The model
 - [Messages API | Anthropic](https://platform.claude.com/docs/en/build-with-claude/working-with-messages)
 - [System messages | Anthropic](https://platform.claude.com/docs/en/build-with-claude/mid-conversation-system-messages)
 - [Prompt engineering | OpenAI](https://developers.openai.com/api/docs/guides/prompt-engineering)
-- [Text generation | Google](https://ai.google.dev/gemini-api/docs/text-generation)
+- [Text generation | Google](https://aistudio.google.com/docs/text-generation)

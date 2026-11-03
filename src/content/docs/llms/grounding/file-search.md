@@ -25,4 +25,4 @@ Under the hood, file search requires machinery for document chunking, embedding,
 
 - [Search results | Anthropic](https://platform.claude.com/docs/en/build-with-claude/search-results)
 - [File search | OpenAI](https://developers.openai.com/api/docs/guides/tools-file-search)
-- [File search | Google](https://ai.google.dev/gemini-api/docs/file-search)
+- [File search | Google](https://aistudio.google.com/docs/file-search)

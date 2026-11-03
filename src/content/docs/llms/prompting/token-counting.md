@@ -24,4 +24,4 @@ Platforms provide a dedicated operation to count tokens. It accepts the same req
 
 - [Token counting | Anthropic](https://platform.claude.com/docs/en/build-with-claude/token-counting)
 - [Token counting | OpenAI](https://developers.openai.com/api/docs/guides/token-counting)
-- [Token counting | Google](https://ai.google.dev/gemini-api/docs/tokens)
+- [Token counting | Google](https://aistudio.google.com/docs/tokens)

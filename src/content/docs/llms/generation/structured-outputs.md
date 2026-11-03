@@ -19,4 +19,4 @@ Under the hood, the platform compiles the schema into a grammar that constrains 
 
 - [Structured outputs | Anthropic](https://platform.claude.com/docs/en/build-with-claude/structured-outputs)
 - [Structured outputs | OpenAI](https://developers.openai.com/api/docs/guides/structured-outputs)
-- [Structured outputs | Google](https://ai.google.dev/gemini-api/docs/structured-output)
+- [Structured outputs | Google](https://aistudio.google.com/docs/structured-output)

@@ -26,4 +26,4 @@ For small, one-off files, platforms support inline delivery as base64; for large
 
 - [File input | Anthropic](https://platform.claude.com/docs/en/build-with-claude/files)
 - [File input | OpenAI](https://developers.openai.com/api/docs/guides/file-inputs)
-- [File input | Google](https://ai.google.dev/gemini-api/docs/file-input-methods)
+- [File input | Google](https://aistudio.google.com/docs/file-input-methods)

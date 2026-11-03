@@ -20,4 +20,4 @@ Streaming works for all types of content, including generated text, tool argumen
 
 - [Output streaming | Anthropic](https://platform.claude.com/docs/en/build-with-claude/streaming)
 - [Output streaming | OpenAI](https://developers.openai.com/api/docs/guides/streaming-responses)
-- [Output streaming | Google](https://ai.google.dev/gemini-api/docs/streaming)
+- [Output streaming | Google](https://aistudio.google.com/docs/streaming)

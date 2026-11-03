@@ -26,4 +26,4 @@ Internal reasoning trades tokens for higher quality on hard, multi-step tasks. U
 
 - [Internal reasoning | Anthropic](https://platform.claude.com/docs/en/build-with-claude/thinking)
 - [Internal reasoning | OpenAI](https://developers.openai.com/api/docs/guides/reasoning)
-- [Internal reasoning | Google](https://ai.google.dev/gemini-api/docs/thinking)
+- [Internal reasoning | Google](https://aistudio.google.com/docs/thinking)
