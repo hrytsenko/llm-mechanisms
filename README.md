@@ -50,8 +50,8 @@ Note that `description` repeats the definition; it appears in the guide's mechan
 
 ```sh
 npm install
-npm run dev      # http://localhost:4321/llm-mechanisms/
-npm run build    # output in dist/
+npm run dev      # run at http://localhost:4321/llm-mechanisms/
+lychee .         # check links
 ```
 
-Pushing to `main` deploys the site via [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+Pushing to `main` deploys the site and checks links with [lychee](https://lychee.cli.rs/), which also runs weekly.

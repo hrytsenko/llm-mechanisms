@@ -1,0 +1,2 @@
+# Check web links only.
+scheme = ["https", "http"]
