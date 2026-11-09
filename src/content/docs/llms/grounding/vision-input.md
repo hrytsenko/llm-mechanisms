@@ -18,7 +18,7 @@ Under the hood, models use native vision on images (common formats include JPEG,
 
 ## Specifics
 
-- Anthropic gives no explicit quality-vs-cost lever; images and PDF pages are resized automatically.
+- Anthropic gives no explicit lever to trade quality for cost; images and PDF pages are resized automatically.
 - Google accepts the most images per request, up to 3,600.
 
 ## References

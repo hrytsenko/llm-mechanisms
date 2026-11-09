@@ -2,7 +2,7 @@
 
 Fundamental mechanisms for building with LLMs and agents, compared across Anthropic, OpenAI, and Google.
 
-Published at [Hrytsenko - LLM Mechanisms](https://hrytsenko.github.io/llm-mechanisms/).
+Published at [LLM Mechanisms](https://hrytsenko.github.io/llm-mechanisms/).
 
 ## Content
 
@@ -52,6 +52,7 @@ Note that `description` repeats the definition; it appears in the guide's mechan
 npm install
 npm run dev      # run at http://localhost:4321/llm-mechanisms/
 lychee .         # check links
+vale .           # check prose
 ```
 
-Pushing to `main` deploys the site and checks links with [lychee](https://lychee.cli.rs/), which also runs weekly.
+Pushing to `main` deploys the site, checks prose with [Vale](https://vale.sh/), and checks links with [lychee](https://lychee.cli.rs/), which also runs weekly.

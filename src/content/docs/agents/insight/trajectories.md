@@ -8,7 +8,7 @@ sidebar:
 
 A trajectory is the recorded path the agent took to produce its output.
 
-It holds the messages, tool calls, tool results, reasoning, and handoffs, in order. Trajectories answer how predictably and efficiently the agent reached its result. On predictability, an agent may arrive at the right output through an unexpected path — for instance, consistently recovering from invalid tool calls rather than calling them correctly the first time. On efficiency, it may reach the same result at higher cost — for instance, escalating to a stronger model on tasks that didn't need it. The final output alone hides both; the trajectory is what exposes them.
+It holds the messages, tool calls, tool results, reasoning, and handoffs, in order. Trajectories answer how predictably and efficiently the agent reached its result. On predictability, an agent can arrive at the right output through an unexpected path — for example, consistently recovering from invalid tool calls rather than calling them correctly the first time. On efficiency, it can reach the same result at higher cost — for example, escalating to a stronger model on tasks that didn't need it. The final output alone hides both; the trajectory is what exposes them.
 
 ## Considerations
 
@@ -19,7 +19,7 @@ It holds the messages, tool calls, tool results, reasoning, and handoffs, in ord
 
 - Anthropic captures the trajectory as the session transcript, written to disk in the structured form of a per-session JSONL file.
 - OpenAI produces traces composed of spans for programmatic capture: each run is wrapped in an agent span, with generation, function, and handoff spans nested under it, linkable across runs by a shared group identifier.
-- Google stores trajectories in eval cases, one per session, each listing its turns — the user input, the tool calls in order, and the final response — alongside the session's initial state.
+- Google stores trajectories in evaluation cases, one per session, each listing its turns — the user input, the tool calls in order, and the final response — alongside the session's initial state.
 
 ## References
 

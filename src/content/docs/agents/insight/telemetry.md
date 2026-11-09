@@ -13,7 +13,7 @@ Telemetry gives a near real-time view of an agent's operational health and expen
 ## Considerations
 
 - Strip sensitive data such as prompts from telemetry unless that content is critically needed.
-- Track cost per turn, not per call — resent context makes long loops grow superlinearly.
+- Track cost per turn, not per call — resent context makes long loops grow faster than linearly.
 
 ## Specifics
 

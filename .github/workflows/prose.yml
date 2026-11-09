@@ -1,0 +1,19 @@
+name: Check prose
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: vale-cli/vale-action@v3
+        with:
+          fail_on_error: true
+          filter_mode: nofilter

@@ -8,7 +8,7 @@ sidebar:
 
 Tools are the capabilities the harness gives the model so it can act.
 
-Tools fall into four categories by who ships them and where they run: hosted tools ship with the platform and run on it, such as web search and code execution; built-in tools ship with the harness and run in the agent environment, such as file search, file access, and shell commands; custom tools ship with your application and run in the agent environment; and MCP tools ship from third parties and run in the agent's or a third-party environment. Tool output is model input: agent tools return structured, parseable results, which is why a dedicated search tool exists alongside a shell that could run the same command.
+Tools fall into four categories by who ships them and where they run. Hosted tools ship with the platform and run on it, such as web search and code execution. Built-in tools ship with the harness and run in the agent environment, such as file search, file access, and shell commands. Custom tools ship with your application and also run in the agent environment. MCP tools ship from third parties and run in the agent's or a third-party environment. Tool output is model input: agent tools return structured, parseable results, which is why a dedicated search tool exists alongside a shell that could run the same command.
 
 ## Considerations
 

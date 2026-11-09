@@ -8,7 +8,7 @@ sidebar:
 
 A sandbox is the inner boundary around the code and commands the agent executes.
 
-Executing model-generated code and shell commands is the agent's most dangerous capability: it runs with real privileges, and a single prompt injection can turn it toward leaking credentials or exfiltrating data. A sandbox contains it either inside the host process, by wrapping the shell, or in a separate container, and guards two boundaries: filesystem isolation confines reads and writes to the working directory, and network isolation confines outbound traffic to allowed endpoints. The two are interdependent — either alone is defeated by the other's absence.
+Executing model-generated code and shell commands is the agent's most dangerous capability: it runs with real privileges, and a single prompt injection can turn it toward leaking credentials or exfiltrating data. A sandbox contains it either inside the host process, by wrapping the shell, or in a separate container. It guards two boundaries: filesystem isolation confines reads and writes to the working directory, and network isolation confines outbound traffic to allowed endpoints. The two depend on each other: neither holds without the other.
 
 ## Considerations
 
