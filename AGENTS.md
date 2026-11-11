@@ -1,47 +1,27 @@
 # Agent instructions
 
-See [README.md](README.md) for the content layout, the page template, and how to build the site. The decisions below keep the pages concise and comparable across vendors.
+See [README.md](README.md) for the content layout and how to build the site.
 
-## Structure
+## Vision
 
-### Landing page
+The site compares how Anthropic, OpenAI, and Google offer each mechanism, concisely enough to scan. It is a comparison, not a reference: readers find identifiers, availability, and other details in the vendor documentation.
 
-The landing page ([src/content/docs/index.mdx](src/content/docs/index.mdx)) holds only the title, the tagline, the scope checks and tiers, and the guide cards. The scope checks and tiers are explained only there.
+Each catalog builds on the latest offering of each vendor: the LLMs catalog on the Anthropic Messages API, the OpenAI Responses API, and the Google Interactions API, and the agents catalog on the Claude Agent SDK, the OpenAI Agents SDK, and the Google Agent Development Kit. Other developer guides of these vendors, such as Claude Code or managed hosting guides, are fine too, but superseded offerings, such as OpenAI's Chat Completions, are neither described nor linked, even where they offer more.
 
-### Guide overviews
+## Content
 
-A guide overview, such as [src/content/docs/llms/index.mdx](src/content/docs/llms/index.mdx), opens with one sentence on what the guide covers. It stands on its own, without links or references to the other guide or the landing page. A Tendencies section follows, then one section per group with a one-line summary and the group's mechanisms.
+The home page holds only the title, the tagline, the scope checks and tiers, and the catalog cards; no other page explains the scope checks or tiers.
 
-Tendencies summarize how each vendor leans across the guide: one sentence contrasting the three vendors, then one paragraph per vendor. Derive them only from the Specifics of the guide's own mechanisms, since a vendor can lean differently in each guide. Describe the leanings in general terms, without product names or exact numbers, and keep the vendor paragraphs close in length.
+A catalog overview stands on its own, without links or references to the other catalog or the home page. Its Tendencies derive only from the Specifics of its own mechanisms, since a vendor can lean differently in each catalog. They describe each vendor's leanings in general terms, without product names or exact numbers, in paragraphs close in length.
 
-### Mechanism pages
+A mechanism page opens with a definition short enough to scan in the mechanism lists and memorize, which only the frontmatter description repeats. One paragraph on how the mechanism works builds on the definition rather than restating it. Considerations give practical advice, and Specifics give the vendor differences that matter, if any: at most three points each, the most important ones, none repeating the paragraph.
 
-Each mechanism page describes one mechanism — something you use to build with LLMs or agents, such as prompt caching or subagents. Call them mechanisms in all prose, not terms or concepts.
+References give one link per vendor, in the order Anthropic, OpenAI, Google, skipping a vendor only when it doesn't document the mechanism, and more links only for aspects the page describes. Links go to developer guides, not API references, migration guides, or changelogs: the page dedicated to the mechanism, or a broader guide when none exists. Each link is labeled "Label | Vendor", with the mechanism's title for a dedicated page, a shortened title for a broader page, such as "Messages API", and the aspect for an additional link, such as "Tool search".
 
-A mechanism page opens with a one-sentence definition and one paragraph on how the mechanism works. Keep the definition short, so readers can scan the mechanism lists and memorize it. Practical advice goes to Considerations and vendor differences to Specifics, each with at most three points, the most important ones.
+The trends page has one section per version, newest first, headed like "As of November 2026 (0.2.0)". A section lists at most five trends that the version's updates reflect, such as vendors adopting or retiring the same mechanism; changes by a single vendor and editorial changes don't count. A trend starts with its mechanism, linked while the mechanism page exists, and names the change without explaining the mechanism.
 
-Each part of the page carries different content: the paragraph builds on the definition instead of restating it, and Considerations and Specifics don't repeat the paragraph. Only the frontmatter description repeats the definition, as the page template in the README shows.
+## Prose
 
-### Trends page
+Describe what platforms do in plain prose, without API identifiers such as field, parameter, or operation names. Names of products, libraries, and files, such as `tiktoken` or `AGENTS.md`, are fine. Refer to mechanisms as mechanisms, not as terms or concepts.
 
-The trends page ([src/content/docs/trends.mdx](src/content/docs/trends.mdx)) has one section per version, newest first, headed by the month of the update and the version, such as "As of November 2026 (0.2.0)". Each section lists at most five industry trends that the version's updates reflect and that bring vendors closer together, such as adopting the same mechanism or retiring the same one. Leave out changes by a single vendor and editorial changes, such as rewording or restructuring. Each trend starts with the mechanism it concerns, linked to the mechanism page while the page exists, and names the change without explaining how the mechanism works.
-
-## Writing
-
-### Explain in prose
-
-Describe what a platform does in plain prose, without API identifiers such as field, parameter, or operation names; readers find those in the vendor documentation. Names of products, libraries, and files, such as `tiktoken` or `CLAUDE.md`, are fine.
-
-### Reduce noise
-
-Leave out qualifiers that don't inform the reader, such as hedges on platform support ("where supported", "on some platforms"). Describing an aspect means it is worth knowing; readers check availability in the vendor documentation. When a divergence between platforms matters, point it out in Specifics.
-
-### Build references
-
-Give one link per platform, in the order Anthropic, OpenAI, Google, and skip a platform only when it doesn't document the mechanism. Link to the developer guides rather than API references, migration guides, or changelogs: prefer the page dedicated to the mechanism, and fall back to a broader guide when none exists. Add more links for a platform only for aspects the page describes.
-
-Label each link "Label | Vendor" so readers can scan and compare: the mechanism's title for a dedicated page, a shortened title for a broader page, such as "Messages API", and the aspect for an additional link, such as "Tool search".
-
-### Use the latest APIs and SDKs
-
-Each guide builds on the latest offering of each platform. The LLM guide covers the latest API families: the Anthropic Messages API, the OpenAI Responses API, and the Google Interactions API. The agents guide covers the agent SDKs: the Claude Agent SDK, the OpenAI Agents SDK, and the Google Agent Development Kit. Other developer guides of the vendor, such as Claude Code or managed hosting guides, are fine too, but don't describe or link superseded offerings, such as OpenAI's Chat Completions, even where they offer more.
+Leave out qualifiers that don't inform the reader, such as hedges on platform support ("where supported", "on some platforms"). Describing an aspect means it is worth knowing; when a divergence between vendors matters, point it out in Specifics.

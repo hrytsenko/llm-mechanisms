@@ -8,43 +8,17 @@ Published at [LLM Mechanisms](https://hrytsenko.github.io/llm-mechanisms/).
 
 ```text
 src/content/docs/
-  index.mdx                  # landing page
-  trends.mdx                 # industry trends
-  <guide>/                   # llms or agents
-    index.mdx                # guide overview
-    <group>/<mechanism>.md   # mechanism explanation
-    ...
+  index.mdx             # home
+  <catalog>/
+    index.mdx           # catalog overview
+    <group>/
+      <mechanism>.md    # mechanism page
+  trends.mdx            # trends
 ```
 
-Each mechanism is one Markdown file in its group directory:
-
-```md
----
-title: "Mechanism"
-description: "One-sentence definition."
-tier: foundational        # foundational or situational
-sidebar:
-  order: 1                # position within the group
----
-
-One-sentence definition.
-
-Additional notes, in one paragraph.
-
-## Considerations
-
-- What to pay attention to.
-
-## Specifics
-
-- How vendors differ (optional).
-
-## References
-
-- [Mechanism | Vendor](https://...)
-```
-
-Note that `description` repeats the definition; it appears in the guide's mechanism list and in link previews.
+- **Catalog:** Groups of mechanisms for building either LLM applications or agentic systems.
+- **Mechanism:** A concise description of one mechanism and how vendors offer it.
+- **Trends:** Industry trends that bring vendors closer together, listed by version.
 
 ## Develop
 
@@ -54,5 +28,3 @@ npm run dev      # run at http://localhost:4321/llm-mechanisms/
 lychee .         # check links
 vale .           # check prose
 ```
-
-Pushing to `main` deploys the site, checks prose with [Vale](https://vale.sh/), and checks links with [lychee](https://lychee.cli.rs/), which also runs weekly.
