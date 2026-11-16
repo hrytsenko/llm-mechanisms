@@ -1,0 +1,23 @@
+repos:
+  - repo: local
+    hooks:
+      - id: zizmor
+        name: zizmor
+        entry: zizmor --no-progress .
+        language: system
+        pass_filenames: false
+        always_run: true
+
+      - id: vale
+        name: vale
+        entry: vale .
+        language: system
+        pass_filenames: false
+        always_run: true
+
+      - id: lychee
+        name: lychee
+        entry: lychee --no-progress .
+        language: system
+        pass_filenames: false
+        always_run: true

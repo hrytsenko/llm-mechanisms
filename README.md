@@ -24,7 +24,7 @@ src/content/docs/
 
 ```sh
 npm install
-npm run dev      # run at http://localhost:4321/llm-mechanisms/
-lychee .         # check links
-vale .           # check prose
+npm run dev                 # run at http://localhost:4321/llm-mechanisms/
+pre-commit install          # install hooks
+pre-commit run --all-files  # run hooks
 ```
